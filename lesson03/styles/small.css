@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+
+
+header {
+
+    color: white;
+    background-color: rgb(46, 120, 139);
+    text-align: center;
+    padding: .2rem;
+}
+
+nav {
+    font-size: 20px;
+}
+
+.headingpage1,
+.headingpage2,
+.headingpage3,
+.headingpage4,
+.headingpage5 {
+    font-size: 25px;
+    color: rgb(46, 120, 139);
+}
+
+
+
+
+
+h1 {
+    font-size: 30px;
+}
+
+
+h3 {
+    font-size: 20px;
+}
+
+h4,
+p {
+    font-size: 15px;
+    font-style: italic;
+}
+
+ul,
+li,
+ol {
+    font-size: 15px;
+}
+
+footer {
+    color: white;
+    background-color: rgb(46, 120, 139);
+    padding: 1rem;
+    text-align: center;
+}
+
+header,
+footer {
+
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+header,
+nav,
+main,
+footer {
+    max-width: 800px;
+    /* margin: 0 auto; */
+
+}
+#menu {
+	font-size: 1.5rem;
+	border: 1px solid rgba(0,0,0,.3);
+	padding: 3px 7px 6px;
+	background-color: #eee;
+	color: #000;
+ 	position: absolute;
+	right:30px;
+	margin-top: -20px;
+}
+
+#menu::before {
+	content: "â˜°";
+}
+
+#menu.open::before {
+	content: "âœ–ï¸";
+}
+
+.navigation {
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+	background-color: #333;
+	color: #fff;
+}
+.navigation li {
+	display: none;
+}
+.navigation li a {
+	display: block;
+	padding: 1rem;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+}
+.navigation li a:hover {
+	background-color: #bbb;
+	color: #333;
+	font-weight: 700;
+}
+
+/* when the button is clicked - the open class is toggle (added/removed) and accounted for here */
+.open li {
+	display: block;
+	width: 100%;
+}
+.open li a {
+	display: block;
+}
+.Name::before {
+	content: "🌹";
+}
+
+nav {
+    background-color: #156160;
+    text-align: center;
+    box-shadow: 0 5px 15px gray;
+}
+
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 0.70rem;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+
+nav a:hover {
+    background-color: cadetblue;
+
+    color: black;
+}
+
+
+.byu {
+    color: white;
+    background-color: transparent;
+
+}
+.container-table{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+table,
+th,
+td {
+    display: table-cell;
+    border: 2px solid black;
+    border-collapse: collapse;
+    padding: 2px;
+}
+
+
+
+.colors {
+    width: 100%;
+}
