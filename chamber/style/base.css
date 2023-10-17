@@ -46,7 +46,7 @@ body {
   background-color: var(--outline-color);
 }
 
-h1, h2 {
+h2 {
   font-family: "League Spartan", sans-serif;
   text-align: center;
   margin: 0;
@@ -70,7 +70,10 @@ h1 {
   font-size: 3.5rem;
   grid-column: 1 / 6;
   grid-row: 2 / 3;
-  align-self: end;
+  font-family: "League Spartan", sans-serif;
+  text-align: center;
+  margin: 0;
+  color: white;
 }
 
 
