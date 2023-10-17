@@ -32,14 +32,9 @@
       padding-bottom: 1rem;
     }
     
-    .page-name-1 {
-      grid-column: 2 / 3;
-      grid-row: 1 / 2;
-      font-size: 5rem;
-      padding-top: 1rem;
-    }
+   
   
-    .page-name-2 {
+ h1 {
       grid-column: 2 / 3;
       grid-row: 2 / 3;
       font-size: 3rem;
