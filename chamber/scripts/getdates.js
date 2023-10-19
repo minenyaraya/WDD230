@@ -1,8 +1,12 @@
-let date = new Date ();
-console.log(date);
-let year = date.getFullYear();
-console.log(year);
-document.querySelector(".year").textContent = year
-let currentdate = document.lastModified;
-console.log(currentdate);
-document.querySelector(".highlight").textContent=currentdate
+const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
+
+function switchTheme(e) {
+    if (e.target.checked) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+    }
+    else {
+        document.documentElement.setAttribute('data-theme', 'light');
+    }    
+}
+
+toggleSwitch.addEventListener('change', switchTheme, false);

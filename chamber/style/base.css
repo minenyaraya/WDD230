@@ -12,12 +12,109 @@
     --card-bg-color: white;
     --card-text-color: black;
     --outline-color: black;
-    --shadow-color: grey;
     --cta-bg-color: white;
-  
+  }
+
+  [data-theme="dark"] {
+    --primary-color: #09393d;
+    --secondary-color: #020806;
+    --font-style-color: #dedbd5;
+    --border-color: #a0c6c0;
+    --font-color: rgb(217, 219, 213);
+    --main-bg-color: black;
+    --card-bg-color: rgb(49, 143, 140);
+    --card-text-color: #E5E4E2;
+    --outline-color: black;
+    --cta-bg-color: rgba(6, 76, 68, 0.7);
   }
 
 
+  .theme-switch-wrapper {
+    display: flex;
+    grid-column: 5 / 6;
+    grid-row: 1 / 2;
+  }
+
+  .theme-switch {
+    display: inline-block;
+    height: 34px;
+    position: relative;
+    width: 60px;
+    margin-left: auto;
+  }
+  
+  .theme-switch input {
+    display:none;
+  }
+  
+  .slider {
+    background-color: white;
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: .4s;
+    border-radius: 5px;
+  }
+  
+  .slider:before {
+    background-color: #8ec4b5;
+    bottom: 4px;
+    content: "";
+    height: 26px;
+    left: 4px;
+    position: absolute;
+    transition: .4s;
+    width: 26px;
+  }
+  
+  input:checked + .slider {
+    background-color: #8ec4b5;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(26px);
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: #087d7f;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color:#8ee0cc ;
+    border-radius: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #087d7f;
+    border-radius: 5px;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(26px);
+  }
+ 
   header {
     padding: 20px;
   }
@@ -47,7 +144,7 @@ body {
 }
 
 h2 {
-  font-family: "League Spartan", sans-serif;
+  font-family: sans-serif;
   text-align: center;
   margin: 0;
   color: white;
@@ -57,7 +154,6 @@ header {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: 1fr 1fr 1fr 1fr;
-  text-shadow: 2px 2px 8px var(--border-color);
   color: var(--font-style-color);
   background-color: var(--primary-color);
   border: 5px solid var(--border-color);
@@ -67,10 +163,10 @@ header {
 }
 
 h1 {
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   grid-column: 1 / 6;
   grid-row: 2 / 3;
-  font-family: "League Spartan", sans-serif;
+  font-family:  sans-serif;
   text-align: center;
   margin: 0;
   color: white;

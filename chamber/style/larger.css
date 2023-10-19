@@ -3,22 +3,103 @@
   :root {
     --primary-color: #087d7f;
     --secondary-color: #074d46;
-    --font-style-color: #E5E4E2;
+    --font-style-color: white;
     --border-color: #3b5c61;
     --font-color: white;
     --main-bg-color: white;
     --card-bg-color: hsl(40, 5%, 89%);
     --card-text-color: black;
     --outline-color: black;
-    --shadow-color: grey;
     --cta-bg-color: rgba(3, 59, 64, 0.7);
+  }
+  [data-theme="dark"] {
+    --primary-color: #09393d;
+    --secondary-color: #020806;
+    --font-style-color: #dbd9d6;
+    --border-color: #a0c6c0;
+    --font-color: rgb(196, 196, 194);
+    --main-bg-color: black;
+    --card-bg-color: rgb(49, 143, 140);
+    --card-text-color: #E5E4E2;
+    --outline-color: black;
+    --cta-bg-color: rgba(6, 76, 68, 0.7);
   }
 
     body {
       max-width: 1050px;
       margin: 0 auto;
     }
+    .theme-switch-wrapper {
+      grid-column: 3 / 4;
+      grid-row: 1 / 2;
+      display: flex;
+      text-align: right;
+      padding: 1rem;
+    }
+  
+    .theme-switch {
+      display: inline-block;
+      height: 34px;
+      position: relative;
+      width: 60px;
+      margin-left: auto;
+    }
+    h1{
+      font-weight: 100;
+      color: beige;
+    }
+    .theme-switch input {
+      display:none;
+    }
     
+ 
+    
+    .slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #beeff0;
+      transition: .4s;
+      border-radius: 5px;
+      border: 1px solid black;
+      border-radius: 5px;
+    }
+    
+    .slider:before {
+      position: absolute;
+      content: "";
+      height: 26px;
+      width: 26px;
+      left: 4px;
+      bottom: 4px;
+      background-color: #087d7f;
+      transition: .4s;
+    }
+    
+    input:checked + .slider {
+      background-color:#134249 ;
+      border-radius: 5px;
+      border: 1px solid white;
+	    box-shadow: 0 0 15px black;
+     
+    }
+    
+    input:focus + .slider {
+      box-shadow: 0 0 1px #087d7f;
+      border-radius: 5px;
+    }
+    
+    input:checked + .slider:before {
+      -webkit-transform: translateX(26px);
+      -ms-transform: translateX(26px);
+      transform: translateX(26px);
+    }
+    
+    
+
     header {
       display: grid;
       grid-template-columns: 25% 50% 25%;

@@ -10,10 +10,72 @@
 	  --card-bg-color: #E5E4E2;
 	  --card-text-color: black;
 	  --outline-color: black;
-	  --shadow-color: grey;
 	  --cta-bg-color: rgb(20, 50, 58);
 	}
-  
+	[data-theme="dark"] {
+		--primary-color: #09393d;
+		--secondary-color: #020806;
+		--font-style-color: #cbc8c2;
+		--border-color: #a0c6c0;
+		--font-color: rgb(208, 206, 204);
+		--main-bg-color: black;
+		--card-bg-color: rgb(49, 143, 140);
+		--card-text-color: #ece8df;
+		--outline-color: black;
+		--cta-bg-color: rgba(6, 76, 68, 0.7);
+	  }
+	  .theme-switch-wrapper {
+		grid-column: 5 / 6;
+		grid-row: 1 / 2;
+		display: flex;
+		text-align: right;
+		padding: 1rem;
+	  }
+	
+	  .theme-switch {
+		display: inline-block;
+		height: 34px;
+		position: relative;
+		width: 60px;
+		margin-left: auto;
+	  }
+	  
+	  .theme-switch input {
+		display:none;
+	  }
+	  
+	  .slider {
+		background-color: white;
+		bottom: 0;
+		cursor: pointer;
+		left: 0;
+		position: absolute;
+		right: 0;
+		top: 0;
+		transition: .4s;
+		border-radius: 5px;
+	  }
+	  
+	  .slider:before {
+		background-color: #197788;
+		bottom: 4px;
+		content: "";
+		height: 26px;
+		left: 4px;
+		position: absolute;
+		transition: .4s;
+		width: 26px;
+		border-radius: 5px;
+	  }
+	  
+	  input:checked + .slider {
+		background-color: #b8ece4;
+	  }
+	  
+	  input:checked + .slider:before {
+		transform: translateX(26px);
+	  }
+	  
   
 	header {
 	  display: grid;
