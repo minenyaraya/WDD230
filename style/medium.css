@@ -1,0 +1,138 @@
+@media screen and (min-width: 481px) {
+  
+	:root {
+	  --primary-color:rgb(46, 120, 139);
+	  --secondary-color:#0e5765;
+	  --font-style-color: #E5E4E2;
+	  --border-color: #636363;
+	  --font-color: white;
+	  --main-bg-color: white;
+	  --card-bg-color: #E5E4E2;
+	  --card-text-color: black;
+	  --outline-color: black;
+	  --cta-bg-color: rgb(20, 50, 58);
+	}
+
+	 
+	  
+  
+	header {
+	  display: grid;
+	  grid-template-columns: 30% 17% 16% 17% 20%;
+	  grid-template-rows: auto auto auto;
+	}
+	
+	.mypicture {
+	  grid-column: 1 / 2;
+	  grid-row: 1 / 4;
+	  align-self: center;
+	}
+	
+	h1 {
+	  font-size: 4rem;
+	  padding-top: 1rem;
+	  grid-column: 2 / 5;
+	  grid-row: 1 / 2;
+	}
+  
+	
+  
+	.social {
+	  grid-column: 2 / 5;
+	  grid-row: 3 / 4;
+	}
+	
+	.social-1 {
+	  justify-self: right;
+	  margin: 0;
+	  padding-bottom: 1rem;
+	}
+  
+	.social-2 {
+	  justify-self: center;
+	  margin: 0;
+	  padding-bottom: 1rem;
+	}
+	
+	.social-3 {
+	  justify-self: left;
+	  margin: 0;
+	  padding-bottom: 1rem;
+	}
+	
+	nav ul {
+	  display: flex;
+	  padding: 10px;
+	  margin: 0;
+	}
+  
+	nav li {
+	  list-style-type: none;
+	}
+  
+	nav ul li {
+	  display: block;
+	  flex: 1 1 100%;
+	  padding: 0;
+	}
+  
+	#menu {
+	  display: none;
+	}
+  
+	main {
+	  background-color: var(--main-bg-color);
+	}
+  
+	.call-to-action {
+	  position: absolute;
+	  width: 220px;
+	  top: 90%;
+	  left: 50%;
+	  transform: translate(-50%, -50%);
+	  padding: 10px;
+	  background-color: var(--cta-bg-color);
+	}
+	
+	.card-box {
+	  display: grid;
+	  grid-template-columns: 1fr 1fr;
+	  grid-template-rows: auto auto auto;
+	}
+  
+	.card1,
+	.card2,
+	.card3,
+	.card4,
+	.card5 {
+	  background-color: var(--card-bg-color);
+	  color: var(--card-text-color);
+	}
+  
+	.card1 {
+	  grid-column: 1 / 3;
+	  grid-row: 1 / 2;
+	}
+	
+	.card2 {
+	  grid-column: 2 / 3;
+	  grid-row: 3 / 4;
+	}
+	
+	.card3 {
+	  grid-column: 1 / 2;
+	  grid-row: 2 / 3;
+	}
+	
+	.card4 {
+	  grid-column: 2 / 3;
+	  grid-row: 2 / 3;
+	}
+	
+	.card5 {
+	  grid-column: 1 / 2;
+	  grid-row: 3 / 4;
+	}
+	
+	
+  }

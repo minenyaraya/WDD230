@@ -1,0 +1,160 @@
+@media screen and (min-width: 1025px) {
+  
+  :root {
+    --primary-color: #087d7f;
+    --secondary-color: #074d46;
+    --font-style-color: white;
+    --border-color: #3b5c61;
+    --font-color: white;
+    --main-bg-color: white;
+    --card-bg-color: hsl(40, 5%, 89%);
+    --card-text-color: black;
+    --outline-color: black;
+    --cta-bg-color: rgba(3, 59, 64, 0.7);
+  }
+  
+
+    body {
+      max-width: 1050px;
+      margin: 0 auto;
+    }
+   
+    h1{
+      font-weight: 100;
+      color: beige;
+    }
+    
+    header {
+      display: grid;
+      grid-template-columns: 25% 50% 25%;
+      grid-template-rows: auto auto;
+      height: 200px;
+    }
+    
+    .mypicture {
+      width: 10px;
+      border-radius: 5px;
+      background: radial-gradient(#fff, #165559);
+	    border: 1px solid rgba(0,0,0,.75);
+    }
+    
+    .social {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      margin-left: 90px;
+      margin-top: -60px;
+      padding: 20px;
+    }
+    
+    .social > div {
+      margin: 10px;
+      padding: 0;
+    }
+    
+    nav ul {
+      display: flex;
+      padding: 10px;
+      margin: 0;
+    }
+  
+    nav li {
+      list-style-type: none;
+    }
+  
+    nav ul li {
+      display: block;
+      flex: 1 1 100%;
+      padding: 0;
+    }
+  
+    #menu {
+          display: none;
+    }
+    
+    main {
+      background-color: var(--main-bg-color);
+    }
+  .herolabel {
+	position: absolute;
+	top: 30px;
+	left: 30px;
+	background: radial-gradient(#fff, #4D5B97);
+	border: 1px solid rgba(0,0,0,.75);
+	padding: 1.5rem;
+	box-shadow: 0 0 3rem #fff;
+	opacity: 0.75;
+	/* Buenas */
+}
+
+.herolabel p {
+	margin: 0;
+	padding: .25rem;
+	font-weight: 700;
+	font-size: 2rem;
+	font-family:"Great Vibes", serif;
+}
+
+    img {
+      max-width: 100%;
+      max-height: 100%;
+      margin: 0 auto;
+    }
+    
+    main picture img {
+      padding-top: 10px;
+    
+    }
+  
+    .card-box {
+      display: grid;
+      
+     
+    }
+
+    .card1,
+    .card2,
+    .card3,
+    .card4,
+    .card5 {
+      background-color: var(--card-bg-color);
+      color: var(--card-text-color);
+    }
+  
+    .card1 {
+      grid-column: 1 / 3;
+      grid-row: 1 / 2;
+    }
+    
+    .card2 {
+      grid-column: 3 / 4;
+      grid-row: 1 / 2;
+    }
+    
+    .card3 {
+      grid-column: 1 / 2;
+      grid-row: 2 / 3;
+    }
+    
+    .card4 {
+      grid-column: 2 / 3;
+      grid-row: 2 / 3;
+    }
+    
+    .card5 {
+      justify-content: center;
+      justify-self: center;
+
+    }
+    .card-headline{
+      font-style: normal;
+      color: white;
+    }
+    
+    footer{
+      display: block;
+      text-align: center;
+      padding-top: 1rem;
+    }
+   
+  }

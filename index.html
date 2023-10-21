@@ -3,44 +3,64 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Mineny Araya - WDD 230 - Web Frontend Development </title>
+    <title>Mineny Araya - WDD 230 - Web Frontend Development</title>
+    <meta property="og:title" content="Chamber of Commerce of Edmond ok">
     <meta name="author" content="Mineny Araya WDD 230">
     <meta name="description" content="This page aims to see my own progress and development of each assignment and assignment of WDD 230 - Web Frontent Development, these assignments are divided into weeks in the BYU-Idaho portal. Mineny Araya">
-    <meta property="og:title" content="Mineny Araya - WDD 230 - Web Frontend Development">
-    <meta property="og:type" content="Chamber of Comerce of Edmond">
-    <meta property="og:images" content="https://upload.wikimedia.org/wikipedia/commons/3/39/Keukenhof_340.JPG">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://oklahomawonders.com/wp-content/uploads/2020/03/shutterstock_1331572973.jpg">
     <meta property="og:url" content="https://minenyaraya.github.io/wdd230/index.html">
     <link rel="stylesheet" href="style/normalize.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" href="style/large.css">
+    <link rel="stylesheet" href="style/larger.css">
     <link rel="stylesheet" href="style/base.css">
-    <link rel="icon" href="images/mineny.ico">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Crimson+Pro">
+    <link rel="stylesheet" href="style/medium.css">
+    <link rel="icon" href="images/mineny.ico"> 
+    <link href="https://fonts.googleapis.com/css2?family=Katibeh&family=Open+Sans:ital,wght@0,300;0,400;1,300&family=Roboto:wght@100;300&display=swap" rel="stylesheet">
   </head>
   <body>
     <div class="content">
       <header>
-        <picture class="personal-photo">
-          <img src="images/mineny.jpg" alt="me">
+        <h1>Mineny Araya</h1>
+        <picture class="mypicture">
+          <img src="images/mineny.jpg" alt="My Picture">
         </picture>
-        <h1 class="full-name">Mineny Araya</h1>
-        <a id="menu" href="#" aria-label="hamburger menu"></a>
+        <div class="social">
+          <div class="social-1">
+          <a target="_blank" href="https://facebook.com">
+            <img src="images/faceboock.jpg" alt="Facebook"></a>
+          </div>
+          <div class="social-2">
+          <a target="_blank" href="https://linkedin">
+            <img src="images/linkedin.jpg" alt="linkedin"></a>
+          </div>
+        </div>  
+         <a id="menu" href="#" aria-label="hamburger menu"></a>
       </header>
       <nav>
         <ul class="navigation">
           <li><a href="https://minenyaraya.github.io/wdd230/index.html" class="current">Home</a></li>
           <li><a href="https://minenyaraya.github.io/wdd230/lesson03/chamber-site-plan.html">Site Plan</a></li>
-          <li><a href="chamber/index.html">Chamber</a></li>
+          <li><a href="https://minenyaraya.github.io/wdd230/chamber/index.html">Chamber</a></li>
           <li><a target="_blank" href="https://www.byui.edu">BYU-Idaho</a></li>
           <li><a target="_blank" href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/21?lang=spa#p14">Scripture</a></li>
           </ul>  
         </nav>
-        <main>
-          <h2 class="home-headline">"WDD 230 - Web Frontend Development"</h2>
-          <div class="card-box">
-            <section class="card">
-              <h3 class="card-headline-1">Activities</h3>
-              <ul class="card-list">
+        <main class="home-area">
+        <div class="container">
+          <picture class="okctemple">
+                <source srcset="images/templodeohkahoma.webp" media="(max-width: 500px)">
+                <img src="images/templodeohkahoma.webp" alt="Placeholder image of Edmond" loading="lazy"  width="940" height="588">
+          </picture>
+          <div class="herolabel">
+            <p>Oklahoma City Temple</p>
+          </div>
+        </div>
+         <h2 class="home-headline">WDD 230: Web Frontend Development</h2>
+        <div class="card-box">
+          <section class="card3">
+            <h3 class="card-headline">Activities</h3>
+            <ul class="card-list">
                 <li> 01:<a target="_blank" href="https://minenyaraya.github.io/wdd230/index.html">|Index |</a><a target="_blank" href="https://minenyaraya.github.io/wdd230/lesson01/holygrail.html">| Grial |</a></li>
                 <li> 02:<a href="https://minenyaraya.github.io/wdd230/lesson02/media-query.html">|Media-query|</a><a href="https://minenyaraya.github.io/wdd230/lesson02/design-principles.html">|Design Principle|</a></li>
                 <li> 03:<a href="lesson03/images/exercise.png">|Exercise|</a><a href="https://codepen.io/minenyaraya-the-solid/pen/OJrZrXe">| Pseudo-elements |</a><a href="https://codepen.io/minenyaraya-the-solid/pen/dywLvjL">|codepen Menu|</a><a href="https://minenyaraya.github.io/wdd230/lesson03/chamber-site-plan.html"></a></li>
@@ -52,27 +72,28 @@
                 <li> 09:<a href=""></a>  
                 <li> 10:<a href=""></a>
               </ul> 
-            </section>
-            <section class="card">
-              <h3 class="card-headline-2">Information</h3>
-              <p class="card-parrafo-1">Edmond, Oklahoma </p>
-              <p class="card-parrafo-2">Weather</p>
-              <p class="card-paragraph-3">Visits</p>
-            </section>
-          </div>
-              <iframe id= "frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d103724.59766294553!2d-97.48964487668464!3d35.66730734903291!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87b21fb31543c513%3A0x461410361dd184cc!2sEdmond%2C%20OK!5e0!3m2!1sen!2sus!4v1695961199450!5m2!1sen!2sus" width="350" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-          </main> 
-    
-          <footer>
-              <p class="copyright">&copy;<span class="year"></span></p> 
-              <p>Mineny Araya</p>
-              <p> Edmond, Oklahoma </p>
-              <p class="highlight" id="lastModified">Last Modified</p>
-          </footer>
-          <script src="scripts/getdates.js"></script>
-          <script src="scripts/toggle.js"></script>
-  
-    </div>    
-      </body>
-    
+          </section>
+          <section class="card4">
+            <h3 class="card-headline">Information</h3>
+            <a href="https://weather.com/weather/today/l/35.65,-97.48?par=google"> The Weather</a>
+            <p>This is your weather</p>
+          </section>
+          <section class="card5">
+            <h3 class="card-headline">📍 Location</h3>
+            <iframe id= "frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d103724.59766294553!2d-97.48964487668464!3d35.66730734903291!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87b21fb31543c513%3A0x461410361dd184cc!2sEdmond%2C%20OK!5e0!3m2!1sen!2sus!4v1695961199450!5m2!1sen!2sus" width="350" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </section>
+        </div>
+      </main>
+      <footer>
+        <p class="copyright">&copy;<span class="year"></span></p> 
+        <p>Mineny Araya</p>
+        <p> Edmond, Oklahoma </p>
+        <p class="highlight" id="lastModified">Last Modified</p>
+        <a href="https://maps.app.goo.gl/A57PhGesZjjcTQkp6">🐧Location</a>
+      </footer>
+      <script src="scripts/darkmode.js"></script>
+      <script src="scripts/getdates.js"></script>
+      <script src="scripts/toggle.js"></script>
+    </div>
+  </body>
   </html>
