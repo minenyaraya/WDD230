@@ -24,6 +24,10 @@
 		--outline-color: black;
 		--cta-bg-color: rgba(6, 76, 68, 0.7);
 	  }
+	  body {
+		max-width: 800px;
+		margin: 0 auto;
+	  }
 	  .theme-switch-wrapper {
 		grid-column: 5 / 6;
 		grid-row: 1 / 2;
@@ -145,15 +149,32 @@
 	  background-color: var(--main-bg-color);
 	}
   
-	.call-to-action {
+	.call-to-action-medio {
+	  display: block;
 	  position: absolute;
-	  width: 220px;
+	  width: 160px;
 	  top: 90%;
 	  left: 50%;
 	  transform: translate(-50%, -50%);
 	  padding: 10px;
-	  background-color: var(--cta-bg-color);
+	  background-color:rgb(128, 176, 173);
 	}
+	
+    .call-to-action-medio p {
+		margin: 0;
+	  }
+
+	.call-to-action-small {
+		display: none;
+	} 
+	  
+	.call-to-action-large {
+		display: none;
+	} 
+	.hero img {
+		width: 100%;
+		height: auto;
+	  }
 	
 	.card-box {
 	  display: grid;

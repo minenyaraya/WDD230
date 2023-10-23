@@ -12,9 +12,9 @@
     <meta property="og:url" content="https://minenyaraya.github.io/wdd230/chamber/index.html">
     <link rel="stylesheet" href="style/normalize.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" href="style/larger.css">
     <link rel="stylesheet" href="style/base.css">
     <link rel="stylesheet" href="style/medium.css">
+    <link rel="stylesheet" href="style/larger.css">
     <link rel="icon" href="images/caballito.ico"> 
     <link href="https://fonts.googleapis.com/css2?family=Katibeh&family=Open+Sans:ital,wght@0,300;0,400;1,300&family=Roboto:wght@100;300&display=swap" rel="stylesheet">
   </head>
@@ -52,24 +52,26 @@
       </ul>
       </nav>
       <main class="home-area">
-        <div class="container">
+        <div class="hero">
           <picture class="city-photo">
-            <img src="images/edmondplace.webp" alt="Placeholder image of Edmond" loading="lazy" >
+            <source srcset="images/wdd230-org-small.webp" media="(max-width: 500px)">
+            <source srcset="images/wdd230orgmediana-1.webp" media="(max-width: 700px)">
+            <img src="images/wdd230-org-large.webp" alt="People" width="968" height="646">
           </picture>
-          <div class="call-to-action"><a href="chamber/join.html">Join the Chamber</a></div>
+          <div class="call-to-action-small"><p>Small</p></div>
+          <div class="call-to-action-medio"><p>Medium</p></div>
+          <div class="call-to-action-larger"><p>Large</p></div>
         </div>  
         <div class="card-box">
           <section class="card1">
             <h3 class="card-headline"> 📆Events</h3>
             <a href="https://cca.edmondchamber.com/evtlistingmainsearch.aspx"> 📅 Calendar</a>
-            
             <p>Each year, the Edmond Area Chamber of Commerce recognizes businesses and individuals that have made a significant impact on our community. Winners of the chamber’s annual awards were recognized at the Annual Banquet on Thursday, February 1, 2024.</p>
           </section>
           <section class="card2">
             <h3 class="card-headline">🚙 Season </h3>
             <p>Activities for this season</p>
             <img src="images/edmondgirls.jpg" alt="girls">
-            <a href="https://weather.com/weather/today/l/35.65,-97.48?par=google"> The Weather</a>
             <p>People</p>
             <p>nature</p>
             <p>live</p>
@@ -84,13 +86,22 @@
           </section>
           <section class="card4">
             <h3 class="card-headline">  🌡️ Weather</h3>
+            <p>Today's Weather
+              <ul> 
+                 <li>High: 82&deg;</li>
+                 <li>Low: 65&deg;</li>
+                 <li>Chance of Precipitation: 5%</li>
+                 <li>Wind: 15mph NW</li>
+                 <li>Wind Chill: <span id="windChill"></span>&deg;</li>  
+          </ul> 
+          <script src="scripts/windchill.js"></script>
+          <p>This is your weather:</p>
             <a href="https://weather.com/weather/today/l/35.65,-97.48?par=google"> The Weather</a>
-            <p>This is your weather</p>
+            
           </section>
           <section class="card5">
             <h3 class="card-headline">📍 Location</h3>
             <a href="https://www.edmondchamber.com/wp-content/uploads/2022/08/2022_EdmondChamberMap_1_11zon.pdf"><img src="images/EdmondChamberMap_1-448x1024.jpeg" alt="EdmonMap"></a>
-          
             <p>Map - Click in the picture</p>
           </section>
         </div>
@@ -108,8 +119,17 @@
         <p class="highlight" id="lastModified">Last Modified</p>
         <a href="https://maps.app.goo.gl/A57PhGesZjjcTQkp6">🐧Location</a>
       </footer>
-      <script src="scripts/getsdates.js"></script>
-      <script src="scripts/toggle.js"></script>
-    </div>
+      </div>
+      <div>
+        <script src="scripts/getsdates.js"></script>
+        <script src="scripts/toggle.js"></script>
+        <script src="scripts/darkmode.js" defer></script>
+        <script src="scripts/windchill.js" defer></script>
+      </div>
+  
   </body>
-  </html>
+  
+
+</html>
+
+

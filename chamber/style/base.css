@@ -264,7 +264,7 @@ nav a:hover {
 }
 
 nav a.current:link {
-  color: gold;
+  color: rgb(147, 150, 147);
 }
 
 .show li {
@@ -284,36 +284,38 @@ main {
   border-right: 5px solid var(--border-color);
 }
 
-.container {
+.hero{
   position: relative;
   text-align: center;
-  color: var(--font-color);
+  color: rgb(3, 65, 55);
   font-size: 1.5rem;
+ 
+}
+.hero img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 25px;
 }
 
-.call-to-action {
+.call-to-action-small {
   position: absolute;
-  width: 180px;
+  width: 80px;
+  height: 80px;
   top: 85%;
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 10px;
+  background-color:rgb(128, 176, 173);
 }
 
-.call-to-action a {
-    font-family: "Merriweather Sans", sans-serif;
+
+.call-to-action-medio{
+  display: none;
+}
+.call-to-action-larger{
+  display: none;
 }
 
-.call-to-action a:link,
-.call-to-action a:visited {
-  color: var(--font-color);
-  text-decoration: none;
-}
-
-.call-to-action a:hover {
-  background-color: var(--primary-color);
-  color: var(--font-color);
-}
 
 img {
   max-width: 95%;
@@ -405,5 +407,3 @@ footer p {
   margin: 0;
   color: white;
 }
-
-

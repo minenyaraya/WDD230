@@ -1,14 +1,12 @@
-const modeButton = document.querySelector("#mode");
-const main = document.querySelector("main");
+const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
 
-modeButton.addEventListener("click", () => {
-	if (modeButton.textContent.includes("🕶️")) {
-		main.style.background = "#000";
-		main.style.color = "#fff";
-		modeButton.textContent = "🔆";
-	} else {
-		main.style.background = "#eee";
-		main.style.color = "#000";
-		modeButton.textContent = "🕶️";
-	}
-});
+function switchTheme(e) {
+    if (e.target.checked) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+    }
+    else {
+        document.documentElement.setAttribute('data-theme', 'light');
+    }    
+}
+
+toggleSwitch.addEventListener('change', switchTheme, false);
