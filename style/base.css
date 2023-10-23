@@ -36,6 +36,7 @@
 }
 
 body {
+  max-width: fit-content;
   font-family: "Lato", "Arial", sans-serif;
   background-color: var(--outline-color);
 }
@@ -61,7 +62,7 @@ header {
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 1.4rem;
   grid-column: 1 / 6;
   grid-row: 2 / 3;
   font-family:  sans-serif;
@@ -109,7 +110,7 @@ h1 {
   grid-row: 4 / 5;
 	display: block;
   text-align: right;
-	font-size: 2rem;
+	font-size: 1.5rem;
 	font-weight:700;
 	text-decoration: none;
 	padding: 0;
@@ -164,7 +165,7 @@ nav a:hover {
 }
 
 nav a.current:link {
-  color: gold;
+  color: rgb(238, 234, 207);
 }
 
 .show li {
@@ -178,17 +179,23 @@ nav a.current:link {
 }
 
 main {
+  max-width: fit-content;
   color: var(--outline-color);
   background-color: var(--main-bg-color);
   border-left: 5px solid var(--border-color);
   border-right: 5px solid var(--border-color);
 }
 
-.container {
+.hero {
   position: relative;
   text-align: center;
   color: var(--font-color);
   font-size: 1.5rem;
+}
+.hero img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 25px;
 }
 
 .herolabel {
@@ -218,6 +225,7 @@ main picture img {
 .card3,
 .card4,
 .card5 {
+  width: 90%;
   border: 2px solid var(--outline-color);
   border-radius: 7px;
   margin: 1rem;
@@ -225,6 +233,7 @@ main picture img {
   color: var(--card-text-color);
   box-shadow: 5px 5px 10px grey;
 }
+
 
 
 .card-headline {
@@ -240,6 +249,9 @@ main picture img {
   border-top-right-radius: 5px;
   margin-top: 0;
   
+}
+iframe{
+  width: 100%;
 }
 
 section p {

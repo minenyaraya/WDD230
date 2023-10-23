@@ -116,7 +116,7 @@
   }
  
   header {
-    padding: 20px;
+    padding: 5px;
   }
   
   .city-logo-header {
@@ -139,6 +139,7 @@
 }
 
 body {
+  max-width: fit-content;
   font-family: "Lato", "Arial", sans-serif;
   background-color: var(--outline-color);
 }
@@ -151,6 +152,7 @@ h2 {
 }
 
 header {
+  height: 200px;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: 1fr 1fr 1fr 1fr;
@@ -163,7 +165,7 @@ header {
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   grid-column: 1 / 6;
   grid-row: 2 / 3;
   font-family:  sans-serif;
@@ -209,7 +211,7 @@ h1 {
   grid-row: 4 / 5;
 	display: block;
   text-align: right;
-	font-size: 2rem;
+	font-size: 1.5rem;
 	font-weight:700;
 	text-decoration: none;
 	padding: 0;
@@ -277,7 +279,9 @@ nav a.current:link {
   color: var(--font-style-color);
 }
 
+
 main {
+  max-width: fit-content;
   color: var(--outline-color);
   background-color: var(--main-bg-color);
   border-left: 5px solid var(--border-color);
@@ -291,7 +295,7 @@ main {
   font-size: 1.5rem;
  
 }
-.hero img {
+.hero img{
   width: 100%;
   height: auto;
   margin-bottom: 25px;
@@ -334,6 +338,7 @@ main picture img {
 .card3,
 .card4,
 .card5 {
+  width: 80%;
   border: 2px solid var(--outline-color);
   border-radius: 7px;
   margin: 1rem;

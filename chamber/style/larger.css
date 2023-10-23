@@ -42,8 +42,11 @@
   }
 
   h1{
+    font-size: 3rem;
+    text-align: justify;
+    margin-top: 40px;
     font-weight: 100;
-    color: beige;
+    color: white;
   }
 
   .theme-switch-wrapper {
