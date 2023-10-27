@@ -23,16 +23,16 @@
       <header>
         <h1>Chamber of Commerce of Edmond</h1>
         <picture class="city-logo-header">
-          <img src="images/edmondlogo.png" alt="Edmond Logo">
+          <img src="images/edmondlogo.webp" alt="Edmond Logo">
         </picture>
         <div class="social">
           <div class="social-1">
           <a target="_blank" href="https://facebook.com">
-            <img src="images/faceboock.jpg" alt="Facebook"></a>
+            <img src="images/faceboock.webp" alt="Facebook"></a>
           </div>
           <div class="social-2">
           <a target="_blank" href="https://www.linkedin.com/">
-            <img src="images/linkedin.jpg" alt="linkedin"></a>
+            <img src="images/linkedin.webp" alt="linkedin"></a>
           </div>
         </div>  
         <div class="theme-switch-wrapper">
@@ -45,10 +45,11 @@
       </header>
       <nav>
       <ul class="navigation">
-        <li><a href="https://minenyaraya.github.io/wdd230/index.html" class="current">Home</a></li>
+        <li><a href="https://minenyaraya.github.io/wdd230/chamber/index.html" class="current">Home</a></li>
         <li><a href="https://www.edmondchamber.com/">Discover</a></li>
         <li><a href="https://www.edmondchamber.com/committees-programs/leadership-edmond/">Directory</a></li>
         <li><a href="chamber/join.html">Join</a></li>
+        <li><a href="contact">Contact</a></li>
       </ul>
       </nav>
       <main class="home-area">
@@ -71,7 +72,7 @@
           <section class="card2">
             <h3 class="card-headline">🚙 Season </h3>
             <p>Activities for this season</p>
-            <img src="images/edmondgirls.jpg" alt="girls">
+            <img src="images/edmondgirls.webp" alt="girls">
             <p>People</p>
             <p>nature</p>
             <p>live</p>
@@ -87,46 +88,46 @@
           <section class="card4">
             <h3 class="card-headline">  🌡️ Weather</h3>
             <p>Today's Weather
-              <ul> 
-                 <li>High: 82&deg;</li>
-                 <li>Low: 65&deg;</li>
-                 <li>Chance of Precipitation: 5%</li>
-                 <li>Wind: 15mph NW</li>
-                 <li>Wind Chill: <span id="windChill"></span>&deg;</li>  
-          </ul> 
-          <script src="scripts/windchill.js"></script>
-          <p>This is your weather:</p>
+            <div class="weather">
+              <img src="images/weather.webp" alt="weather">
+              <div id="weather-info"></div>
+            </div> 
+          <p>The weather:</p>
             <a href="https://weather.com/weather/today/l/35.65,-97.48?par=google"> The Weather</a>
             
           </section>
           <section class="card5">
             <h3 class="card-headline">📍 Location</h3>
-            <a href="https://www.edmondchamber.com/wp-content/uploads/2022/08/2022_EdmondChamberMap_1_11zon.pdf"><img src="images/EdmondChamberMap_1-448x1024.jpeg" alt="EdmonMap"></a>
+            <a href="https://www.edmondchamber.com/wp-content/uploads/2022/08/2022_EdmondChamberMap_1_11zon.pdf"><img src="images/edmondmap.webp" alt="EdmonMap"></a>
             <p>Map - Click in the picture</p>
           </section>
         </div>
       </main>
       <footer>
         <div class="logo-footer">
-          <img class="logo-footer" src="images/edmondlogo.png" alt="Edmond Logo image">
+          <img class="logo-footer" src="images/edmondlogo.webp" alt="Edmond Logo image">
         </div>
         <div class="title-footer">
           <h2> This is Chamber of Commerce  Edmond</h2>
         </div>
         <p class="copyright">&copy;<span class="year"></span></p> 
         <p>Mineny Araya</p>
-        <p> Edmond, Oklahoma </p>
+        <p> 🐧Location: Edmond, Oklahoma </p>
         <p class="highlight" id="lastModified">Last Modified</p>
-        <a href="https://maps.app.goo.gl/A57PhGesZjjcTQkp6">🐧Location</a>
+        <div class="last-visit">
+          Last visit: <span id="visitInfo"></span>
+        </div>
+        
       </footer>
-      </div>
-      <div>
+     
         <script src="scripts/getsdates.js"></script>
         <script src="scripts/toggle.js"></script>
         <script src="scripts/darkmode.js" defer></script>
         <script src="scripts/windchill.js" defer></script>
-      </div>
-  
+        <script src="scripts/localstorage.js"></script>
+        <script src="scripts/visits.js"></script>
+      
+    </div>
   </body>
   
 

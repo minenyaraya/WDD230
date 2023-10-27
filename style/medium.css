@@ -82,6 +82,11 @@
   
 	main {
 	  background-color: var(--main-bg-color);
+	
+	}
+	.hero img{
+		margin-bottom: 5px;
+
 	}
   
 	.call-to-action {

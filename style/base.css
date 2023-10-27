@@ -195,7 +195,7 @@ main {
 .hero img {
   width: 100%;
   height: auto;
-  margin-bottom: 25px;
+  margin-bottom: -55px;
 }
 
 .herolabel {
@@ -203,6 +203,7 @@ main {
   width: 180px;
   top: 25%;
   left: 25%;
+  color: #021827;
   transform: translate(-50%, -50%);
   padding: 10px;
 }
