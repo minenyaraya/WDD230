@@ -138,6 +138,9 @@
 	  grid-column: 1 / 2;
 	  grid-row: 3 / 4;
 	}
+	.weather img{
+		width: 600px;
+	}
 	
 	
   }

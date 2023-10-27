@@ -224,8 +224,7 @@ main picture img {
 .card1,
 .card2,
 .card3,
-.card4,
-.card5 {
+.card4 {
   width: 90%;
   border: 2px solid var(--outline-color);
   border-radius: 7px;
@@ -235,9 +234,19 @@ main picture img {
   box-shadow: 5px 5px 10px grey;
 }
 
-
+.card5 {
+  display: block;
+  width: 80%;
+  border: 2px solid var(--outline-color);
+  border-radius: 7px;
+  margin: 1rem;
+  background-color: var(--card-bg-color);
+  color: var(--card-text-color);
+  box-shadow: 5px 5px 10px grey;
+}
 
 .card-headline {
+
   font-family: "League Spartan", sans-serif;
   line-height: 3rem;
   height: 3rem;
@@ -250,6 +259,10 @@ main picture img {
   border-top-right-radius: 5px;
   margin-top: 0;
   
+}
+.weather img{
+  width: 400px;
+
 }
 
 
@@ -285,3 +298,5 @@ footer p {
   margin: 0;
   color: white;
 }
+
+
