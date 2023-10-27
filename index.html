@@ -57,11 +57,10 @@
                 <p>Oklahoma City Temple</p>
               </div>
           </div>
-         <h2 class="home-headline">WDD 230: Web Frontend Development</h2>
-        <div class="card-box">
-          <section class="card3">
-            <h3 class="card-headline">Activities</h3>
-            <ul class="card-list">
+          <div class="card-box">
+            <section class="card3">
+              <h3 class="card-headline">Activities</h3>
+              <ul class="card-list">
                 <li> 01:<a target="_blank" href="https://minenyaraya.github.io/wdd230/index.html">|Index |</a><a target="_blank" href="https://minenyaraya.github.io/wdd230/lesson01/holygrail.html">| Grial |</a></li>
                 <li> 02:<a href="https://minenyaraya.github.io/wdd230/lesson02/media-query.html">|Media-query|</a><a href="https://minenyaraya.github.io/wdd230/lesson02/design-principles.html">|Design Principle|</a></li>
                 <li> 03:<a href="lesson03/images/exercise.png">|Exercise|</a><a href="https://codepen.io/minenyaraya-the-solid/pen/OJrZrXe">| Pseudo-elements |</a><a href="https://codepen.io/minenyaraya-the-solid/pen/dywLvjL">|codepen Menu|</a><a href="https://minenyaraya.github.io/wdd230/lesson03/chamber-site-plan.html">Site Plan</a></li>
@@ -69,43 +68,35 @@
                 <li> 05:<a href="https://minenyaraya.github.io/wdd230/lesson05/bom.html">BOM-Bock Of Mormon</a> 
                 <li> 06:<a href="https://minenyaraya.github.io/wdd230/lesson03/images/landscape.webp">WebP</a> 
                 <li> 07:<a href="https://minenyaraya.github.io/wdd230/index.html">Curso Portal</a> 
-                <li> 08:<a href=""></a> 
-                <li> 09:<a href=""></a>  
-                <li> 10:<a href=""></a>
+                
               </ul> 
-          </section>
-          <section class="card4">
-            <h3 class="card-headline">Information</h3>
-            <div class="weather">
-              <img src="images/weather.webp" alt="weather">
-              <div id="weather-info">
-               
-
-
+            </section>
+            <section class="card4">
+              <h3 class="card-headline">Information</h3>
+              <div class="weather">
+                <img src="images/weather.webp" alt="weather">
+                <div id="weather-info"></div>
               </div>
+              <p>☁️This is your weather:</p>
+            </section>
+            <div class="card5">
+              <h4 class="card-headline">📍 Location</h4>
+              <iframe id= "frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d103724.59766294553!2d-97.48964487668464!3d35.66730734903291!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87b21fb31543c513%3A0x461410361dd184cc!2sEdmond%2C%20OK!5e0!3m2!1sen!2sus!4v1695961199450!5m2!1sen!2sus" width="350" height="250" style="border:0;" allowfullscreen="50%" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-            <p>☁️This is your weather:</p>
-          </section>
-          <div class="card5">
-            <h4 class="card-headline">📍 Location</h4>
-            <iframe id= "frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d103724.59766294553!2d-97.48964487668464!3d35.66730734903291!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87b21fb31543c513%3A0x461410361dd184cc!2sEdmond%2C%20OK!5e0!3m2!1sen!2sus!4v1695961199450!5m2!1sen!2sus" width="350" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
-        </div>
-      </main>
-      <footer>
-        <p class="copyright">&copy;<span class="year"></span></p> 
-        <p>Mineny Araya</p>
-        <p>🐧Location: Edmond, Oklahoma </p>
-        <p class="highlight" id="lastModified">Last Modified</p>
-        <div class="last-visit">
-            Last visit: <span id="visitInfo"></span>
-        </div>
-      </footer>
-      <script src="scripts/getdates.js"></script>
-      <script src="scripts/toggle.js"></script>
-      <script src="scripts/windchill.js"></script>
-      <script src="scripts/localstorage.js"></script>
-      <script src="scripts/visits.js"></script>
+        </main>
+        <footer>
+          <p class="copyright">&copy;<span class="year"></span></p> 
+          <p>Mineny Araya</p>
+          <p>🐧Location: Edmond, Oklahoma </p>
+          <p class="highlight" id="lastModified">Last Modified</p>
+          <p><span class="label">Number of Visits: </span><span class="visits"></span></p>
+        </footer>
+        <script src="scripts/getdates.js"></script>
+        <script src="scripts/toggle.js"></script>
+        <script src="scripts/windchill.js"></script>
+        <script src="scripts/localstorage.js"></script>
+        <script src="scripts/visits.js"></script>
     </div>
   </body>
-  </html>
+</html>

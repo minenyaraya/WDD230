@@ -185,6 +185,11 @@ main {
   border-left: 5px solid var(--border-color);
   border-right: 5px solid var(--border-color);
 }
+.home-headline{
+  color:black;
+  font-size: large;
+  color: black;
+}
 
 .hero {
   position: relative;
@@ -195,7 +200,6 @@ main {
 .hero img {
   width: 100%;
   height: auto;
-  margin-bottom: -55px;
 }
 
 .herolabel {
@@ -298,5 +302,19 @@ footer p {
   margin: 0;
   color: white;
 }
+iframe{
+  width: max-content;
+}
+.label {
+	font-family: Arial, sans-serif;
+	font-weight: 700;
+}
+
+#visits {
+	color: navy;
+	font-weight: bolder;
+	font-size: larger;
+}
+
 
 

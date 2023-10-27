@@ -496,4 +496,14 @@ footer p {
   grid-column: 1/3;
   font-size: 14px;
 }
+.label {
+	font-family: Arial, sans-serif;
+	font-weight: 700;
+}
+
+#visits {
+	color: navy;
+	font-weight: bolder;
+	font-size: larger;
+}
 
