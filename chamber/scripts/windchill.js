@@ -59,3 +59,5 @@ function displayWeatherData(data) {
 
 const city = 'Edmond';
 fetchWeatherData(city);
+
+

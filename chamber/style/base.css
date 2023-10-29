@@ -503,3 +503,64 @@ footer p {
 	font-size: larger;
 }
 
+.discoveryhome{
+  display: grid;
+max-width: fit-content;
+}
+.discoveryhome {grid-template-columns: 1fr}
+#discover-meeting-banner {display: none;}
+.discoveryhome div{
+    background-color: #ADD8E6;
+    margin: 1rem;
+    padding: 1rem 1rem;
+    text-align: center;
+    border: 1px solid black;
+    box-shadow: 3px 3px 5px 1px #333;
+
+}
+
+.discoveryhome div{
+  background-color: #ADD8E6;
+  margin: 1rem;
+    padding: 1rem 1rem;
+    text-align: center;
+    border: 1px solid black;
+    box-shadow: 3px 3px 5px 1px #333;
+}
+.discoveryhome div h2{
+  margin-top: .2rem;
+    margin-bottom: .8rem;
+    text-shadow: 1px 2px 8px white;
+}
+.discovery-information {grid-row: 1;}
+.image-gallery {
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.image-gallery img {
+  border: 1px solid black;
+  margin: .5rem;
+  box-shadow: 1px 1px 3px 1px #333;
+}
+.image-gallery picture {
+  height: 100%;
+}
+.image-description {
+  margin-top: 0;
+  font-size: .8rem;
+}
+.image-gallery img[data-src] {
+  filter: blur(0.1em);
+}
+
+.image-gallery img {
+  filter: blur(0em);
+  transition: filter 0.5s;
+}
+
+
+
+
+
