@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mineny Araya - WDD 230 - Web Frontend Development</title>
+    <meta property="og:title" content="Chamber of Commerce of Edmond ok">
+    <meta name="author" content="Mineny Araya WDD 230">
+    <meta name="description" content="This page aims to see my own progress and development of each assignment and assignment of WDD 230 - Web Frontent Development, these assignments are divided into weeks in the BYU-Idaho portal. Mineny Araya">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://oklahomawonders.com/wp-content/uploads/2020/03/shutterstock_1331572973.jpg">
+    <meta property="og:url" content="https://minenyaraya.github.io/wdd230/index.html">
+    <link rel="stylesheet" href="style/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="style/larger.css">
+    <link rel="stylesheet" href="style/base.css">
+    <link rel="stylesheet" href="style/medium.css">
+    <link rel="stylesheet" href="style/form.css">
+    <link rel="icon" href="images/minenyta.ico"> 
+    <link href="https://fonts.googleapis.com/css2?family=Katibeh&family=Open+Sans:ital,wght@0,300;0,400;1,300&family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+  </head>
+  <body>
+      <header>
+        <h1>Mineny Araya</h1>
+        <picture class="mypicture">
+          <img src="images/mineny.webp" alt="My Picture"  width="220" height="273">
+        </picture>
+        <div class="social">
+          <div class="social-1">
+          <a target="_blank" href="https://facebook.com">
+            <img src="images/faceboock.webp" alt="Facebook"></a>
+          </div>
+          <div class="social-2">
+          <a target="_blank" href="https://linkedin">
+            <img src="images/linkedin.webp" alt="linkedin"></a>
+          </div>
+        </div>  
+         <a id="menu" href="#" aria-label="hamburger menu"></a>
+      </header>
+      <nav>
+        <ul class="navigation">
+          <li><a href="https://minenyaraya.github.io/wdd230/index.html" class="current">Home</a></li>
+          <li><a href="https://minenyaraya.github.io/wdd230/form.html" class="current">Form</a></li>
+          <li><a href="https://minenyaraya.github.io/wdd230/lesson03/chamber-site-plan.html">Site Plan</a></li>
+          <li><a href="https://minenyaraya.github.io/wdd230/chamber/index.html">Chamber</a></li>
+          <li><a target="_blank" href="https://www.byui.edu">BYU-Idaho</a></li>
+          <li><a target="_blank" href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/21?lang=spa#p14">Scripture</a></li>
+          </ul>  
+        </nav>
+        <main>
+            <div id="formmessage"></div>
+            <h1>Join Us</h1>
+            <form method="get" action="thankyou.html">
+                <p class="smaller">*️⃣ Indicates a required field</p>
+                <label for="name" class="req">Name</label>
+                <input type="text" id="name" name="name" required placeholder="Please Enter Your First Name">
+                <label for="lastname" class="req">Lastname</label>
+                <input type="text" id="lastname" name="lastname" required placeholder="Please Enter Your Lastname">
+                <label for="username" class="req">Username</label>
+                <input type="text" id="username" name="username" required placeholder="Please enter your username">
+                <label for="password" class="req">Password</label>
+                <input type="text" id="password" name="password" pattern="[a-zA-Z -]{10,}" placeholder="At least eight characters long. No numbers.">
+                <label for="password" class="req">Re-enter Your Password</label>
+                <input type="text" id="password2" name="password2"> 
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone">
+        
+                <label for="emailAddress">Your e-mail address</label><br>
+                <input id="emailAddress" type="email" size="64" maxLength="64" required placeholder="username@byui.edu" pattern=".+@byui.edu" title="Please provide only a BYUI e-mail address">
+              
+
+               
+            
+                
+                <label>Enter your rating</label>
+                <div class="stars">
+                    <input type="radio" id="tenstar" name="stars" value="10" required><label for="tenstar"></label>
+                    <input type="radio" id="ninestar" name="stars" value="9" required><label for="ninestar"></label>
+                    <input type="radio" id="eightstar" name="stars" value="8" required><label for="eightstar"></label>
+                    <input type="radio" id="sevenstar" name="stars" value="7" required><label for="sevenstar"></label>
+                    <input type="radio" id="sixstar" name="stars" value="6" required><label for="sixstar"></label>
+                    <input type="radio" id="fivestar" name="stars" value="5" required><label for="fivestar"></label>
+                    <input type="radio" id="fourstar" name="stars" value="4" required><label for="fourstar"></label>
+                    <input type="radio" id="threestar" name="stars" value="3" required><label for="threestar"></label>
+                    <input type="radio" id="twostar" name="stars" value="2" required><label for="twostar"></label>
+                    <input type="radio" id="onestar" name="stars" value="1" required><label for="onestar"></label>
+                </div>
+                <div class="ref"><a href="https://codepen.io/nevkatz/pen/OJPBBpL" target="_blank"></a></div>
+                <button id="btnSubmit" type="submit">Sumit</button>
+                <input type="hidden" value="43aster">
+            </form>
+        </main>
+        <footer>
+            <p class="copyright">&copy;<span class="year"></span></p> 
+            <p>Mineny Araya</p>
+            <p>🐧Location: Edmond, Oklahoma </p>
+            <p class="highlight" id="lastModified">Last Modified</p>
+            <p><span class="label">Number of Visits: </span><span class="visits"></span></p>
+        </footer>
+          <script src="scripts/getdates.js"></script>
+          <script src="scripts/toggle.js"></script>
+          <script src="scripts/windchill.js"></script>
+          <script src="scripts/localstorage.js"></script>
+          <script src="scripts/visits.js"></script>
+          <script src="scripts/form.js"></script>
+          <script src="scripts/lastmodified.js"></script>
+          <script src="scripts/value.js"></script>
+          <script src="scripts/error.js"></script>
+    </body>
+  </html>
+        

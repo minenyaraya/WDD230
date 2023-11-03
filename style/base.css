@@ -14,6 +14,7 @@
     --outline-color: black;
     --cta-bg-color: white;
   }
+
   
   header {
     padding: 5px;
@@ -215,14 +216,14 @@ main {
 
 img {
   max-width: 95%;
-  max-height: 95%;
+  max-height: 85%;
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
 main picture img {
-  padding-top: 10px;
+  padding-top: 20px;
 }
   
 .card1,
@@ -290,12 +291,10 @@ footer {
 
 .mypicture {
   margin-left: 20px;
-  width: 120px;
+  width: 100px;
   grid-column: 1 / 2;
   grid-row: 1 / 3;
-  border-radius: 5px;
-  background: radial-gradient(#fff, #165559);
-  border: 1px solid rgba(0,0,0,.75);
+ 
 }
 
 footer p {
@@ -315,3 +314,4 @@ iframe{
 	font-weight: bolder;
 	font-size: larger;
 }
+

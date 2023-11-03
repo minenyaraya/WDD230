@@ -8,11 +8,13 @@
 	--shadow: hsl(327, 89%, 11%);
 	--zebra: hsl(310, 10%, 89%);
 }
+
 h1{
     text-align: center;
 }
 
 body {
+	align-content: center;
 	font-family: "EB Garamond", Arial, serif;
     font-size: 1.2rem;
     font-weight: 800;
@@ -61,7 +63,8 @@ tbody tr:nth-child(even) {
 footer{
     text-align: center;
     width: max-content;
-    margin-left: 35%;
+	margin: 14px auto;
+
 }
 .highlight{
     color: white;
