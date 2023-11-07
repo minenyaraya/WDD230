@@ -258,4 +258,16 @@
     }
     .image-gallery picture {height: fit-content;}
     .image-gallery img:hover {box-shadow: 0 0 50px #333;}
+	.joinok {
+		display: grid;
+		grid-template-columns: 1fr 2fr;
+	  }
+	
+	  .title {
+		grid-column: 1/4;
+		width: 100%;
+	  }
+
+	
+ 
 }

@@ -296,5 +296,22 @@
   grid-row: 2/8;
 
 }
+ /* JOIN PAGE */
+ .membership {
+  display: inline-block;
+}
+.membership-info {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 5.5rem;
+  padding-left: .1rem;
+  width: 47%;
+}
+.membership-info li {
+  padding: .1rem;
+  font-size: .9rem;
+}
+
+
 
 }

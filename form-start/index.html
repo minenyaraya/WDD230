@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Form Start</title>
+    <meta property="og:title" content="form star">
+    <meta name="author" content="Mineny Araya WDD 230">
+    <meta name="description" content="This page is a Form Star.  It is  a practice .">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://minenyaraya.github.io/wdd230/chamber/index.html">
+    <link rel="stylesheet" href="style/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="images/minenyta.ico"> 
+  </head>
+  <body>
+    <div class="content">
+      <header>
+       <h1>Form Start</h1>
+      </header>
+     
+      <main>
+       
+        <form method="get" action="thanks.html">
+          <fieldset>
+            <legend>Aplicant Information</legend></label>
+            <label class="top">First Name* <input type="text" name="fname" required></label>
+            <label class="top">Last Name* <input type="text" name="lname" required></label>
+            <label class="top" >Phone <input type="tel" name="phone" placeholder="1235551234"></label>
+            <label class="top">Email <input type="email" name="email" placeholder="someone@gmail.com" required></label>
+            <label class="top">Website<input type="url" name="url" placeholder="htpp://"></label>
+
+
+            </fieldset>
+            <fieldset>
+              <legend>Course Information</legend>
+              <div>Audience</div>
+              <label class="sbs"><input type="radio" name="audience" value="beginnner">Beginnner</label>
+              <label class="sbs"><input type="radio" name="audience" value="intermediate">Intermediate</label>
+              <label class="sbs"><input type="radio" name="audience" value="advanced">Advanced</label>
+
+              <div>Sofware needed</div>
+              <label class="sbs"> <input type="checkbox" name="editing" value="yes">Photo Editing</label>
+              <label class="sbs"> <input type="checkbox" name="code" value="yes">Coding</label>
+              <label class="sbs"> <input type="checkbox" name="process" value="yes">Preprocessor</label>
+              <label class="sbs"> <input type="checkbox" name="client" value="yes">ftp Client</label>
+            </fieldset>
+
+            <fieldset>
+              <legend>Funding</legend>
+                <label class="top">Anticipated Completion Date <input type="date" name="completeDate"></label>
+                <label class="top">Course Subject 
+                  <select name="subject">
+                  <option value="">Please select</option>
+                  <option value="sofware">Sofware Devevelopment</option>
+                  <option value="creative">Creative Professional</option>
+                  <option value="info">Information Tegnology</option>
+                  <option value="data">Data Professional</option>
+                  <option value="construction">Construction</option>
+                  <option value="manufacturing">Manufacturig</option>
+                  <option value="business">Business Professional</option>
+                  <option value="security">Syber Security</option>
+                  </select>
+                </label>
+                <label class="top">How Many Author<input type="number" name="author"></label>
+             
+            </fieldset>
+            <input type="sumit" value="Propose My Course" class="sumitbtn">
+          
+        </form>
+      </main>
+
+
+
+     
+      <footer>
+      
+        <div class="title-footer">
+          <h2> Star Form</h2>
+        </div>
+        <p class="copyright">&copy;<span class="year"></span></p> 
+        <p>Mineny Araya</p>
+        <p> 🐧Location: Edmond, Oklahoma </p>
+        <p class="highlight" id="lastModified">Last Modified</p>
+        
+      </footer>
+     
+        <script src="scripts/scripts.js"></script>
+      
+    </div>
+  </body>
+</html>
+
+
