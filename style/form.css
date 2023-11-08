@@ -47,9 +47,12 @@ select {
 }
 
 button {
+	background-color: #b5ebe7;
+	color: #071716;
 	padding: 10px;
 	font-size: 1.2rem;
 	font-weight: 700;
+	width: auto;
 }
 
 label {
@@ -106,40 +109,92 @@ input::placeholder {
 		transform: translateX(3px);
 	}
 }
-/* use reverse flexbox to take advantage of flex-direction: reverse */
-/* stars */
-input[type="radio"] {
-	display: none;
-	position: relative;
-	caret-color: rgba(0, 0, 0, 0);
+#r {
+
+	margin-bottom: 0;
 }
 
-.stars {
-	display: flex;
-	flex-direction: row-reverse;
-	justify-content: left;
-}
-
-.stars > label {
-	color: rgb(17, 95, 89);
-	width: 30px;
-	height: 30px;
+#rangevalue {
 	font-size: 2rem;
-	margin-left: 5px;
+	color: navy;
+}
+
+#rangevalues {
 	display: flex;
-	align-items: center;
-	caret-color: rgba(0, 0, 0, 0); /* remove blinking cursor*/
+	margin: 0 0 0 25px;
+	
 }
 
-.stars > label:hover {
+#rangevalues option {
+	flex: 1 1 auto;
+}
+
+
+
+form{
+	width: 90%;
+	max-width: fit-content;
+	height: 100%;
+}
+input {
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	margin-top: 6px;
+	margin-bottom: 16px;
+  }
+  
+  /* Style the submit button */
+  input[type=submit] {
+	background-color: rgb(30, 187, 201);
+	color: rgb(255, 255, 255);
+  }
+  
+  /* Style the container for inputs */
+  .container {
+	background-color: #f1f1f1;
+	padding: 20px;
+  }
+  
+  /* The message box is shown when the user clicks on the password field */
+  #message {
+	display:none;
+	background: #f1f1f1;
 	color: #000;
-}
-
-.stars > label::before {
-	content: "\2606";
-}
-
-.stars input:checked ~ label::before {
-	content: "\2605";
-}
-
+	position: relative;
+	padding: 20px;
+	margin-top: 10px;
+  }
+  
+  #message p {
+	padding: 10px 35px;
+	font-size: 12px;
+  }
+  
+  /* Add a green text color and a checkmark when the requirements are right */
+  .valid {
+	color: green;
+  }
+  
+  .valid:before {
+	position: relative;
+	left: -35px;
+	
+  }
+  
+  /* Add a red text color and an "x" icon when the requirements are wrong */
+  .invalid {
+	color: red;
+  }
+  
+  .invalid:before {
+	position: relative;
+	left: -35px;
+	
+  }
+  legend{
+	margin-top: -40px;
+  }
+  
