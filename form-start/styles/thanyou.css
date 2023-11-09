@@ -1,0 +1,15 @@
+ h1
+{
+    background-color: rgb(162, 234, 234);
+    width: 100%;
+    border-radius: 7px;
+  
+  
+}
+ body{
+    align-items: center;
+    text-align: center;
+    width: max-content;
+	margin: auto;
+
+}
