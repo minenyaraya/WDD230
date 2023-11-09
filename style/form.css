@@ -15,6 +15,7 @@ main {
 	border: 1px solid rgba(0, 0, 0, 0.1);
 	background-color: #fff;
 	max-width: 720px;
+	max-height: fit-content;
 }
 
 header,
@@ -25,16 +26,13 @@ footer {
 }
 
 form {
-	margin: 20px;
+	margin-top: 60px;
 	display: flex;
 	flex-direction: column;
 	position: relative;
 }
 
-h1 {
-	margin: 20px;
-	font-size: 1.5rem;
-}
+
 
 input,
 textarea,
@@ -130,12 +128,6 @@ input::placeholder {
 }
 
 
-
-form{
-	width: 90%;
-	max-width: fit-content;
-	height: 100%;
-}
 input {
 	width: 100%;
 	padding: 12px;
@@ -194,7 +186,12 @@ input {
 	left: -35px;
 	
   }
-  legend{
+  legend {
 	margin-top: -40px;
+  }
+  h1{
+	text-align: center;
+	color: #000;
+	font-size: larger;
   }
   
