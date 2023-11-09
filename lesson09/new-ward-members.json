@@ -1,0 +1,33 @@
+{
+    "Branch" : "Oklahoma 4",
+    "moving" : "05/10/2021",
+    "member" : 3,
+    "Family name" : "Araya",
+    "Obisp Visit" : true,
+    "members" : [
+      {
+        "name" : "Alexis Araya",
+        "gender" : "Male",
+        "birthday" : [
+          "08/26/1962" 
+        ]
+      },
+      {
+        "name" : "Mineny Araya",
+        "age" : 3,
+        "gender" : "Female",
+        "birthday" : [
+          "09/30/1962"
+        ]
+      },
+      {
+        "name" : "Gordo Araya",
+        "age" : 34,
+        "gender" : "Male",
+        "birthday" : [
+          "12/10/1988"
+          
+        ]
+      }
+    ]
+  }
