@@ -496,7 +496,8 @@ footer p {
 .discoveryhome{
   display: grid;
 max-width: fit-content;
-font: var(--font-color);
+font-style: italic;
+color: #e8e4e4;
 }
 .discoveryhome {grid-template-columns: 1fr}
 #discover-meeting-banner {display: none;}
