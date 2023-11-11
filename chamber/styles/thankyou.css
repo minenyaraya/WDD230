@@ -1,12 +1,14 @@
 h1
 {
-    background-color: rgb(162, 234, 234);
+    background-color: rgb(56, 135, 135);
     width: 100%;
     border-radius: 7px;
   
   
 }
 body{
+    width: 100px;
+    background-color: rgb(223, 221, 213);
     align-items: center;
     text-align: center;
     width: max-content;

@@ -1,0 +1,22 @@
+main section {
+    background-color: lightcyan;
+    margin: .5rem;
+    padding: 1rem;
+    box-shadow: 1px 1px 5px 1px black;
+
+}
+body {
+    text-align: center;
+}
+main img{
+    box-shadow: 3px 3px 10px 3px black;
+}
+main div{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    padding: .5rem;
+    box-shadow: 3px 3px 10px 3px black;
+}
+ 
+
+

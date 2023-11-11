@@ -1,29 +1,30 @@
 @media screen and (max-width: 480px) {
 
   :root {
-    --primary-color: rgb(46, 120,139);
-    --secondary-color: rgb(35, 89, 89);
+    --primary-color: rgb(79, 89, 91);
+    --secondary-color: rgb(73, 140, 140);
     --font-style-color: white;
     --border-color: black;
     --font-color: white;
-    --main-bg-color: white;
-    --card-bg-color: white;
+    --main-bg-color:rgb(223, 221, 213); ;
+    --card-bg-color:#d6dadb;
     --card-text-color: black;
     --outline-color: black;
-    --cta-bg-color: white;
+    --cta-bg-color: #d6dadb;
   }
 
   [data-theme="dark"] {
-    --primary-color: #76c7cf;
-    --secondary-color: #71cfaf;
-    --font-style-color: #1c140c;
-    --border-color: #a0c6c0;
+    --primary-color: rgb(33, 62, 64);
+    --secondary-color: #234238;
+    --font-style-color: #100c07;
+    --border-color: #0d3831;
     --font-color: black;
-    --main-bg-color: rgb(214, 205, 205);
+    --main-bg-color: rgb(24, 47, 52);
     --card-bg-color: rgb(49, 143, 140);
-    --card-text-color: #d0c9c0;
-    --outline-color: rgb(19, 15, 15);
-    --cta-bg-color: rgba(112, 199, 189, 0.7);
+    --card-text-color:#d6dadb ;
+    --outline-color: rgb(15, 9, 6);
+    --cta-bg-color: rgba(80, 147, 139, 0.7);
+
   }
 
 
@@ -282,7 +283,7 @@ main {
   width: 100%;
   max-width: fit-content;
   color: var(--outline-color);
-  background-color:#f3f6f5;
+  background-color:rgb(223, 221, 213);;
   border-left: 5px solid var(--border-color);
   border-right: 5px solid var(--border-color);
 }
@@ -406,7 +407,7 @@ footer {
   height: 30px;
   background-color: var(--accent2-color);
   padding: 6px;
-  color: rgb(233, 230, 230);
+  color:#d6dadb ;
   font-weight: bold;
 }
 
@@ -419,7 +420,7 @@ footer {
 }
 
 #visits {
-	color: rgb(240, 237, 237);
+	color:rgb(223, 221, 213);
 	font-weight: bolder;
 	font-size: larger;
 }
@@ -453,7 +454,7 @@ footer {
 
 footer p {
   margin: 0;
-  color: rgb(239, 220, 220);
+  color: rgb(223, 221, 213);
 }
  
 .weather-img {
@@ -497,7 +498,7 @@ footer p {
   display: grid;
 max-width: fit-content;
 font-style: italic;
-color: #e8e4e4;
+color: #d6dadb;
 }
 .discoveryhome {grid-template-columns: 1fr}
 #discover-meeting-banner {display: none;}
@@ -552,6 +553,10 @@ color: #e8e4e4;
   filter: blur(0em);
   transition: filter 0.5s;
 }
+.discoveryhome{
+  font-size: large;
+  color: #020b0c;
+}
 
 
 
@@ -564,12 +569,12 @@ color: #e8e4e4;
   max-width: 100%;
   margin: 0 auto;
   padding-top: 10px;
-  background-color:#f3f2f2 ;
+  background-color: #d6dadb;
 }
 
 form label.top,
 form div {
-  
+  background-color:#d6dadb;
   display: block;
   padding-top: 16px;
   font-size: 16px;
@@ -578,12 +583,12 @@ form div {
 
 form label.top input {
   display: block;
-  border: solid 1px #e4e0e0;
+  border: solid 1px #d98585;
   border-radius: 4px;
   padding: 12px;
   color: #1d0707;
   width: 80%;
-  background-color:#addeda;
+  background-color:white;
 }
 
 form label.sbs {
@@ -594,7 +599,7 @@ form label.sbs {
 
 form input.submitBtn {
   border: none;
-  background-color: #addeda;
+  background-color:rgb(162, 223, 220);
   color:var(--secondary-color);
   font-weight: bold;
   border-radius: 6px;
@@ -637,8 +642,8 @@ fieldset {
 }
 
   .jcontainer {
-    background-color: rgb(173, 219, 217);
-    border: 2px solid #bbbbbb;
+    background-color: rgb(146, 218, 211);
+    border: 2px solid rgb(44, 66, 109);
     padding: 10px;
     text-align: start;
     position: relative;
@@ -650,4 +655,7 @@ fieldset {
 
 .form-container p{
   text-align: center;
+}
+.joinok{
+  background-color:#d6dadb ;
 }
