@@ -1,0 +1,121 @@
+{
+    "lessons WDD 230": [
+      {
+        "links lesson 01": [
+            {
+              "url" : "https://minenyaraya.github.io/wdd230/index.html",
+              "title" : "Home Page WDD 230"
+            },
+            {
+                "url":"https://minenyaraya.github.io/wdd230/lesson01/holygrail.html",
+                "title":"Holy Grail"
+              }
+          ],   
+        
+        "links lesson 02":[
+            {
+              "url":"https://minenyaraya.github.io/wdd230/lesson02/media-query.html",
+              "title":"Media Queries"
+            },
+            {
+              "url":"https://minenyaraya.github.io/wdd230/lesson02/design-principles.html",
+              "title":"Design Principles Document"
+            }
+          ],
+
+          "links lesson 03":[
+            {
+              "url":"lesson03/images/exercise.png",
+              "title":"Exercise"
+            },
+            {
+              "url":"https://codepen.io/minenyaraya-the-solid/pen/OJrZrXe",
+              "title":"Code Pen Seudo-Elements"
+            },
+            {
+              "url":"https://codepen.io/minenyaraya-the-solid/pen/dywLvjL",
+              "title":"Menu"
+            },
+            {
+              "url":"https://minenyaraya.github.io/wdd230/lesson03/chamber-site-plan.html",
+              "title":"Site Plan"
+            }
+          ],
+
+          "links lesson 04":[
+            {
+              "url":"https://codepen.io/minenyaraya-the-solid/pen/bGOyVKz",
+              "title":"Code Pen Seudo-Class"
+            }
+          ],
+
+          "links lesson 05":[
+            {
+              "url":"https://minenyaraya.github.io/wdd230/lesson05/bom.html",
+              "title":"BOM - Book Of Mormon "
+            }
+          ],
+
+          "links lesson 06":[
+            {
+              "url":"https://minenyaraya.github.io/wdd230/lesson03/images/landscape.webp",
+              "title":"Webp"
+            }
+            
+          ],
+
+          "links lesson 07":[
+            {
+              "url":"https://minenyaraya.github.io/wdd230/index.html",
+              "title":"Curso Portal"
+            },
+            {
+              "url":"https://minenyaraya.github.io/wdd230/lesson03/lazyload.html",
+              "title":"LazyLoad"
+            },
+            {
+              "url":"https://minenyaraya.github.io/wdd230/chamber/discover.html",
+              "title":"Discover"
+            }
+          ],   
+        
+          "links lesson 08":[
+              {
+                "url":"https://minenyaraya.github.io/wdd230/lesson08/tablebuild.html",
+                "title":"Table Build Form"
+              },
+              {
+                "url":"https://minenyaraya.github.io/wdd230/chamber/join.html",
+                "title":"Join US"
+              }
+            ],   
+        
+            "links lesson 09":[
+                {
+                  "url":"https://minenyaraya.github.io/wdd230/lesson09/new-ward-members.json",
+                  "title":"JSON"
+                },
+                {
+                  "url":"https://minenyaraya.github.io/wdd230/lesson09/prophets.html",
+                  "title":"Prophets"
+                
+                },
+                {
+                  "url":"",
+                  "title":""
+                }            
+          ]
+      }
+  ]
+}  
+  
+
+      
+   
+        
+          
+
+          
+      
+         
+        
