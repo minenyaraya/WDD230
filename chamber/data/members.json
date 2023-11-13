@@ -12,42 +12,42 @@
           "address": "604 North Brodway Edmond, OK 73034",
           "phone": "405-801-0000",
           "website": "https:www.//bitohelp.com/",
-          "images": "images/bito.webp"
+          "images": "images/bitoysaca.webp"
       },
       {
           "name": "Mercy craft",
           "address": "34 N Bussy Road, Edmond, Ok 73034",
           "phone": "405-331-0000",
           "website": "https://www.ri",
-          "images": "images/riddleslogo.webp"
+          "images": "images/mercy.webp"
       },
       {
           "name": "Cake for You",
           "address": "409 Main S, Edmond Ok 73012",
           "phone": "405-250-0000",
           "website": "https://www.cakeforyou.com/",
-          "images": "images/cake.webp"
+          "images": "images/edmond6.webp"
       },
       {
           "name": "Janpro Oklahoma",
           "address": "770 North 23rd St Edmond, Ok 73012",
           "phone": "405-989-9900",
           "website": "https://www.janpro.com/",
-          "images": "images/janpro-logo.webp"
+          "images": "images/ruta66.webp"
       },
       {
-          "name": "Beautifull Nail",
+          "name": "Cat Nail",
           "address": "750 North Brodway Edmond, Ok 73012",
           "phone": "405-899-8993",
           "website": "https://beautifullnail.com/",
-          "images": "images/nails.webp"
+          "images": "images/catnails.webp"
       },
       {
           "name": "Good Time",
           "address": "670 North Sunny St Edmond, Ok 73013",
           "phone": "405-000-8747",
           "website": "https://www.goodtime.com/",
-          "images": "images/good.webp"
+          "images": "images/gatitos.webp"
       },
       {
           "name": "Plottr",
@@ -61,28 +61,28 @@
           "address": "30 North penny St Edmond, Ok 73012",
           "phone": "405-000-2255",
           "website": "https://www.shelltercare.com/",
-          "images": "images/shelter.webp"
+          "images": "images/edmond5.webp"
       },
       {
           "name": "Mariesther LLC",
           "address": "20 North Meridian Av. Edmond, ok 73013",
           "phone": "405-989-9898",
           "website": "http://www.mariesther.com/",
-          "images": "images/codesk.webp"
+          "images": "images/appa&katara.webp"
       },
       {
           "name": "Gordo Pets",
           "address": "203 North Meridian Av. Edmond, ok 73013",
           "phone": "405-676-6767",
           "website": "https://www.gordopets",
-          "images": "images/.webp"
+          "images": "images/horses.webp"
       },
       {
           "name": "Mily help you",
           "address": "204 south Meridian Av. Edmond, ok 73013",
           "phone": "405-404-0044",
           "website": "https://www.milyhelpyou/",
-          "images": "images/.webp"
+          "images": "images/edmond2.webp"
       }
   ]
 }
