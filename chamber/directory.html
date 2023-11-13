@@ -52,10 +52,24 @@
         <li><a href="contact">Contact</a></li>
       </ul>
       </nav>
-      <main class="home-area">
-        
+      <main class="directoryPage">
+        <h2 class="dirHeading">Directory</h2>
+        <div class="links">
+            <ul>
+                <li class="grid active" data-view="grid-view">
+                <span class="material-icons-outlined">
+                grid_view</span></li>
+
+                <li class="list" data-view="list-view">
+                <span class="material-icons-outlined">
+                format_list_bulleted</span></li>
+            </ul>
         </div>
-      </main>
+        <div class="views">
+            <div class="view-div grid-view" style="display: grid;"></div>
+            <div class="view-div list-view" style="display: none;"></div>
+        </div>
+    </main>
       <footer>
         <div class="logo-footer">
           <img class="logo-footer" src="images/edmondlogo.webp" alt="Edmond Logo image">
@@ -74,8 +88,11 @@
         <script src="scripts/toggle.js"></script>
         <script src="scripts/darkmode.js" defer></script>
         <script src="scripts/windchill.js" defer></script>
-        <script src="scripts/localstorage.js"></script>
-        <script src="scripts/visits.js"></script> 
+        <script src="scripts/directory.js" defer></script>
+        <script src="scripts/visits.js"></script>
+        <script src="scripts/directory.js"></script>
     </div>
   </body>
 </html>
+
+

@@ -318,6 +318,22 @@ discover p{
   font-size: .9rem;
 }
 
-
-
 }
+.grid-view {
+  grid-template-columns: 1fr 1fr 1fr;
+  }
+  .list-view section{
+      display: flex;
+      padding: 2rem 0;
+  }
+  .list-view section h2, 
+  .list-view section p, 
+  .list-view section a {
+      padding: 0 2rem;
+  }
+  .list-view section h2 {
+      width: 15%;
+  }
+  .list-view section p {
+      width: 15%;
+  }
