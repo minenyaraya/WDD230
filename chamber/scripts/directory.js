@@ -34,6 +34,8 @@ fetch(dataURL)
         image.setAttribute("src", business.images);
         image.setAttribute("alt", `Image of ${business.name}`);
         image.setAttribute("loading", "lazy");
+        image.setAttribute("width","200");
+        image.setAttribute("height","140");
        
         media_card.appendChild(h2);
         media_card.appendChild(image);
