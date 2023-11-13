@@ -1,5 +1,5 @@
 
-const dataURL = 'https://minenyaraya.github.io/wdd230/chamber/js/data.json';
+const dataURL = 'https://minenyaraya.github.io/wdd230/chamber/data/members.json';
 const listDiv = document.querySelector('.list-view');
 const cardDiv = document.querySelector('.grid-view');
 
