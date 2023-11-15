@@ -1,0 +1,58 @@
+:root {
+  --main-bk-color: black;
+  --secondary-bk-color: rgb(198, 236, 241);
+  --main-font-color: white;
+  --secondary-font-color: rgba(235, 240, 242, 0.734);
+  --title-font-family: 'Arial';
+  --main-font-family: 'Arial';
+}
+
+body {
+  font-family: var(--main-font-family);
+  font-size: larger;
+}
+header{
+  background-color: aqua;
+  text-align: center;
+}
+ main, footer {
+  margin: 0 auto;
+  align-items: center;
+  margin-top: 1em;
+}
+
+footer {
+  background-color: var(--main-bk-color);
+  color: var(--main-font-color);
+  border-radius: 1.5em;
+  text-align: center;
+  padding: 0.5em;
+  width: 55%;
+  height: 30px;
+  color: var(--secondary-font-color);
+}
+
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  background-color: var(--secondary-bk-color);
+  padding: 1em;
+  width: 50%;
+}
+
+figure {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1{
+  text-align: center;
+
+}
+

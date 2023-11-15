@@ -38,4 +38,3 @@ const displayProphets = (prophets) => {
 }
 
 getProphetData();
-

@@ -92,7 +92,7 @@
         
             "links lesson 09":[
                 {
-                  "url":"https://minenyaraya.github.io/wdd230/lesson09/new-ward-members.json",
+                  "url":"https://minenyaraya.github.io/wdd230/lesson09/new-ward-members.html",
                   "title":"JSON"
                 },
                 {
@@ -101,9 +101,26 @@
                 
                 },
                 {
-                  "url":"",
-                  "title":""
-                }            
+                  "url":"https://minenyaraya.github.io/wdd230/lesson09/data.html",
+                  "title":"Data-Links"
+                }
+              ],   
+        
+              "links lesson 10":[
+                  {
+                    "url":"https://minenyaraya.github.io/wdd230/lesson10/weather.html",
+                    "title":"Weather-APPI"
+                  },
+                  {
+                    "url":"",
+                    "title":""
+                  
+                  },
+                  {
+                    "url":"",
+                    "title":""
+                  }             
+                
           ]
       }
   ]
