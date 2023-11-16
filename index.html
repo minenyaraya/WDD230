@@ -80,7 +80,13 @@
                 <img src="images/weather.webp" alt="weather">
                 <div id="weather-info"></div>
               </div>
-              <p>☁️This is your weather:</p>
+              <p>Edmond Weather: <span id="current-temp"></span></p>
+              <figure>
+                <img id="weather-icon" src="https://api.openweathermap.org" alt="dibujito">
+                <figcaption></figcaption>
+              </figure>
+              <p>☁️This is your weather☁️</p>
+              <p><span class="label">Number of Visits: </span><span class="visits"></span></p>
             </section>
             <div class="card5">
               <h4 class="card-headline">📍 Location</h4>
@@ -93,13 +99,11 @@
           <p>Mineny Araya</p>
           <p>🐧Location: Edmond, Oklahoma </p>
           <p class="highlight" id="lastModified">Last Modified</p>
-          <p><span class="label">Number of Visits: </span><span class="visits"></span></p>
+         
         </footer>
         <script src="scripts/getdates.js"></script>
         <script src="scripts/toggle.js"></script>
         <script src="scripts/windchill.js"></script>
-        <script src="scripts/localstorage.js"></script>
-        <script src="scripts/visits.js"></script>
         <script src="scripts/lastmodified.js"></script>
         <script src="scripts/lastvisits.js"></script>
 

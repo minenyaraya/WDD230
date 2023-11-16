@@ -272,6 +272,7 @@ main picture img {
 
 
 section p {
+  text-align: center;
   font-size: 1.2em;
   padding-left: 20px;
   padding-right: 20px;
@@ -326,4 +327,12 @@ form {
 	font-weight: bolder;
 	font-size: larger;
 }
+figure {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
 

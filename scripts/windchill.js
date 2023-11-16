@@ -1,61 +1,64 @@
-const apiKey = 'bb06f83ae63888ef53975084692c8460';
-const latitude = 33.6846;
-const longitude = -117.8265;
-
-
-function fetchChill(temp, speed) {
-    const f = 35.74 + 0.6215 * temp - 35.75 * speed ** 0.16 + 0.4275 * temp * speed ** 0.16
-    if (temp <= 50 && speed > 3) {
-        windchill = f.toFixed(1) + "°F";
-    } else {
-        windchill = "NA";
+document.addEventListener("DOMContentLoaded", () => {
+ 
+    const currentTemp = document.querySelector('#current-temp');
+    const weatherIcon = document.querySelector('#weather-icon');
+    const captionDesc = document.querySelector('figcaption');
+    
+    const url = "https://api.openweathermap.org/data/2.5/weather?lat=35.65&lon=-97.&appid=6f890d0a59271c9f5a3cf6919b33d215&units=imperial";
+  
+    apiFetch(url).then(data => displayResults(currentTemp, weatherIcon, captionDesc, data));
+  });
+  
+  
+  
+  async function apiFetch(url) {
+   
+    let data;
+  
+    try {
+      
+        const response = await fetch(url);
+       
+        if (response.ok) {
+      
+        data = await response.json();
+        
+        } else {
+            throw Error(await response.text());
+        }
+    
+    } catch (error) {
+        console.log(error);
+        return null;
     }
-
-    return windchill;
-}
-
-function fetchWeatherData(city) {
-    const url = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&units=imperial&appid=${apiKey}`;
-
-    fetch(url)
-        .then(response => response.json())
-        .then(data => {
-            displayWeatherData(data);
-        })
-        .catch(error => {
-            console.error('Error:', error);
-        });
-}
-
-function displayWeatherData(data) {
-    const weatherInfoElement = document.getElementById('weather-info');
-
-    const cityName = data.name;
-    const temperatureFahrenheit = data.main.temp;
-    const weatherIcon = data.weather[0].icon;
-    const windspeed = data.wind.speed;
-    const description = data.weather[0].description;
-    //capitalize each discription word
-    const words = description.split(" ");
-    const capitalizedWords = words.map(function(word) {
-        return word.charAt(0).toUpperCase() + word.slice(1);
+    return data;
+  }
+  
+  
+  function displayResults(currentTemp, weatherIcon, captionDesc, weatherData) {
+   
+    currentTemp.innerHTML = `<strong>${weatherData.main.temp.toFixed(0)}</strong>`;
+  
+    const iconsrc = `https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`;
+   
+  
+    const desc = weatherData.weather[0].description.capitalize();
+  
+    weatherIcon.setAttribute('src', iconsrc);
+    weatherIcon.setAttribute('alt', desc);
+    captionDesc.textContent = desc;
+  }
+  
+  
+  String.prototype.capitalize = function() {
+   
+    let arr = this.split(" ");
+   
+    let capArr = [];
+    
+    arr.forEach(word => {
+    
+        capArr.push(`${word.slice(0, 1).toUpperCase()}${word.slice(1)}`);
     });
-    const capitalizedDescription = capitalizedWords.join(" ");
-
-    fetchChill(temperatureFahrenheit, windspeed);
-
-    const htmlContent = `
-    <span class="weather-headline">${city} Weather</span>
-    <span class="weather-temp">${temperatureFahrenheit.toFixed(1)}°F</span>
-    <span class="weather-description">${capitalizedDescription}</span>
-    <hr class="weather-description">
-    <span class="weather-speed"><strong>Wind Speed:</strong> ${windspeed} mph</span>
-    <span class="weather-chill"><strong>Wind chill:</strong> ${windchill}
-    <p class="small">Courtesy of: <a class="small" href="https://OpenWeatherMap.org">OpenWeatherMap.org</a></p></span>
-  `;
-
-    weatherInfoElement.innerHTML = htmlContent;
-}
-
-const city = 'Edmond';
-fetchWeatherData(city);
+    return capArr.join(" ");
+  }
