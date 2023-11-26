@@ -41,10 +41,18 @@
             <span class="slider round"></span>
           </label>
         </div>
+        <div id="top-page-banner">
+          <div class="banner-content">
+              🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.
+              <button class="bannerBtn" type="button">&times;</button>
+          </div>
+      </div>
+
         <a id="menu" href="#" aria-label="hamburger menu"></a>
+        <div id="now"></div>
       </header>
       <nav>
-      <ul class="navigation">
+      <ul id="navigation">
         <li><a href="https://minenyaraya.github.io/wdd230/chamber/index.html" class="current">Home</a></li>
         <li><a href="https://minenyaraya.github.io/wdd230/chamber/discover.html">Discover</a></li>
         <li><a href="https://minenyaraya.github.io/wdd230/chamber/directory.html">Directory</a></li>
@@ -53,47 +61,69 @@
       </ul>
       </nav>
       <main class="home-area">
+       
         <div class="hero">
           <picture class="city-photo">
             <source srcset="images/wdd230-org-small.webp" media="(max-width: 500px)">
             <source srcset="images/wdd230orgmediana-1.webp" media="(max-width: 700px)">
             <img src="images/wdd230-org-large.webp" alt="People" width="968" height="646">
           </picture>
-          <div class="call-to-action-small"><p>Small</p></div>
-          <div class="call-to-action-medio"><p>Medium</p></div>
-          <div class="call-to-action-larger"><p>Large</p></div>
+          <div>
+            <div class="directoryPage">
+              <h2 class="dirHeading">Directory</h2>
+              <div class="links">
+                 
+              </div>
+              <div class="views">
+                  <div class="view-div grid-view" style="display: grid;"></div>
+                  <div class="view-div list-view" style="display: none;"></div>
+              </div>
+            </div>  
+          
+            
+          </div>
         </div>  
         <div class="card-box">
           <section class="card1">
-            <h3 class="card-headline"> 📆Events</h3>
-            <a href="https://cca.edmondchamber.com/evtlistingmainsearch.aspx"> 📅 Calendar</a>
-            <p>Each year, the Edmond Area Chamber of Commerce recognizes businesses and individuals that have made a significant impact on our community. Winners of the chamber’s annual awards were recognized at the Annual Banquet on Thursday, February 1, 2024.</p>
+           <h3 class="card-headline">More Weather</h3>
+             <br>
+           <div class="weathercontainer">
+            <p class="headline">Three Day Weather Forecast:</p>
+           <div class="forecast-grid" id="forecast-grid"></div>
+             <br>
+           </div>  
           </section>
           <section class="card2">
-            <h3 class="card-headline">🚙 Season </h3>
-            <p>Activities for this season</p>
-            <img src="images/edmondgirls.webp" alt="girls">
-            <p>People</p>
-            <p>nature</p>
-            <p>live</p>
+              <h3 class="card-headline">🚙 Season </h3>
+           
+              <p>Activities for this season</p>
+                <img src="images/edmondgirls.webp" alt="girls">
+              <p>People</p>
+              <p>nature</p>
+              <p>live</p>
           </section>
+         
           <section class="card3">
-            <h3 class="card-headline">❔Information</h3>
-            <p>Topic 🐧</p>
-            <p> Dave’s Hot Chicken is a restaurant based out of LA and recently franchised to Oklahoma! Their first location within Oklahoma was in Bricktown and now they’re expanding into the Edmond community. The business celebrated 6 years of service this year. Dave’s Hot Chicken specializes in jumbo Hot Chicken Tenders and Sliders, along with sides of house-made Kale Slaw, creamy Mac n’ Cheese and crispy, seasoned French Fries. Offered at seven various spice levels ranging from No Spice to Reaper™.  
-
+              <h3 class="card-headline">❔Information</h3>
+              <p>Topic 🐧</p>
+              <p> Dave’s Hot Chicken is a restaurant based out of LA and recently franchised to Oklahoma! Their first location within Oklahoma was in Bricktown and now they’re expanding into the Edmond community. The business celebrated 6 years of service this year. Dave’s Hot Chicken specializes in jumbo Hot Chicken Tenders and Sliders, along with sides of house-made Kale Slaw, creamy Mac n’ Cheese and crispy, seasoned French Fries. Offered at seven various spice levels ranging from No Spice to Reaper™.  
+    
               To learn more about Dave’s Hot Chicken, visit https://www.daveshotchicken.com/</p>
-            <p>more in calender</p>
+              <p>more in calender</p>
           </section>
           <section class="card4">
-            <h3 class="card-headline">  🌡️ Weather</h3>
-            <p>Today's Weather
+              <h3 class="card-headline">  🌡️ Weather</h3>
             <div class="weather">
-              <img src="images/weather.webp" alt="weather">
+                <img src="images/weather.webp" alt="weather">
               <div id="weather-info"></div>
             </div> 
-          <p>The weather:</p>
-            <a href="https://weather.com/weather/today/l/35.65,-97.48?par=google"> The Weather</a>
+             <p>The weather:</p>
+              <p>The current temperature Edmond, Oklahoma is <span id="current-temp"></span></p>
+              <figure>
+                <img id="weather-icon" src="https://api.openweathermap.org" alt="dibujito">
+              
+               <figcaption></figcaption>
+              </figure>
             
           </section>
           <section class="card5">
@@ -101,28 +131,36 @@
             <a href="https://www.edmondchamber.com/wp-content/uploads/2022/08/2022_EdmondChamberMap_1_11zon.pdf"><img src="images/edmondmap.webp" alt="EdmonMap"></a>
             <p>Map - Click in the picture</p>
           </section>
-        </div>
+        </div>  
+      
+          <div class="joinnowe">
+             <button onclick="window.location.href='https://minenyaraya.github.io/wdd230/chamber/join.html';">BECOME A MEMBER</button>
+               <p>Hundreds of businesses and professionals get added everyday.</p>
+               <picture><img src="images/edmondplace.webp" alt="chamber-employees"></picture>
+             <h2>Connect With Us</h2>
+          </div>   
       </main>
-      <footer>
-        <div class="logo-footer">
-          <img class="logo-footer" src="images/edmondlogo.webp" alt="Edmond Logo image">
-        </div>
-        <div class="title-footer">
-          <h2> This is Chamber of Commerce  Edmond</h2>
-        </div>
-        <p class="copyright">&copy;<span class="year"></span></p> 
-        <p>Mineny Araya</p>
-        <p> 🐧Location: Edmond, Oklahoma </p>
-        <p class="highlight" id="lastModified">Last Modified</p>
-        <p><span class="label">Number of Visits: </span><span class="visits"></span></p>
-      </footer>
-     
-        <script src="scripts/getsdates.js"></script>
-        <script src="scripts/toggle.js"></script>
-        <script src="scripts/darkmode.js" defer></script>
-        <script src="scripts/windchill.js" defer></script>
-        <script src="scripts/localstorage.js"></script>
-        <script src="scripts/visits.js"></script> 
-    </div>
-  </body>
-</html>
+            <footer>
+              <div class="logo-footer">
+                <img class="logo-footer" src="images/edmondlogo.webp" alt="Edmond Logo image">
+              </div>
+              <div class="title-footer">
+                <h2> This is Chamber of Commerce  Edmond</h2>
+              </div>
+              <p class="copyright">&copy;<span class="year"></span></p> 
+              <p>Mineny Araya</p>
+              <p> 🐧Location: Edmond, Oklahoma </p>
+              <p class="highlight" id="lastModified">Last Modified</p>
+              <p><span class="label">Number of Visits: </span><span class="visits"></span></p>
+            </footer>
+              <script src="scripts/spotlight.js"></script>
+              <script src="scripts/forescast.js"></script>
+              <script src="scripts/top.js"></script>
+              <script src="scripts/darkmode.js" defer></script>
+              <script src="scripts/visits.js"></script>
+              <script src="scripts/weather.js"></script> 
+      </div>
+    </body>
+  </html>
+        
+        

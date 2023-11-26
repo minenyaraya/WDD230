@@ -751,6 +751,64 @@ h2.dirHeading {
     margin-bottom: 0rem;
 }
 
+.joinnowe picture{
+ 
+ 
+    width: 100%;
+    height: auto; 
+}
+.joinnowe{
+  text-align: center;
+  color: #000101;
+  background-color: #888;
+  
+}
+header {
+	background-color: #15616D;
+	display: grid;
+    grid-template-columns: 5fr 1fr 1fr;
+	align-items: center;
+	justify-content: center;
+	padding: 10px;
+	color: #f4f7f5;
+
+}
+
+
+#top-page-banner {
+  text-align: center;
+  padding: 10px;
+  background-color: rgb(95, 165, 139);
+}
+.bannerBtn {
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  right: 45%;
+  font-weight: bolder;
+  font-size: x-large;
+}
+
+  
+.banner-content{
+  display: block;
+  justify-content: center;
+}
+
+
+
+  .jcontainer {
+    background-color: rgb(146, 218, 211);
+    border: 2px solid rgb(44, 66, 109);
+    padding: 10px;
+    text-align: start;
+    position: relative;
+    margin-bottom: 20px;
+  }
+  .form-container h3{
+    text-align: center;
+  }
+
 
 
 

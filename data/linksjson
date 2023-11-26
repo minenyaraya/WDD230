@@ -4,7 +4,7 @@
         "links lesson 01": [
             {
               "url" : "https://minenyaraya.github.io/wdd230/index.html",
-              "title" : "Home Page WDD 230"
+              "title" : "Home- Mineny-Page WDD 230"
             },
             {
                 "url":"https://minenyaraya.github.io/wdd230/lesson01/holygrail.html",
@@ -124,15 +124,4 @@
           ]
       }
   ]
-}  
-  
-
-      
-   
-        
-          
-
-          
-      
-         
-        
+}          
