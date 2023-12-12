@@ -10,12 +10,12 @@ fetch(dataURL)
     .then((jsonObject) => {
         console.table(jsonObject);
 
-        const businesses = jsonObject['rentaltype'];
-        rentaltype.forEach(displayRentalstypeInGrid);
-        rentaltype.forEach(displayRentalstypeInList);
+        const businesses = jsonObject['rentalstype'];
+        rentalstype.forEach(displayRentalstypeInGrid);
+        rentalstype.forEach(displayRentalstypeInList);
     });
 
-    function displayBusinessesInGrid(rentaltype) {
+    function displayBusinessesInGrid(rentalstype) {
 
         let media_card = document.createElement('section');
         let h2 = document.createElement('h2');
@@ -27,12 +27,12 @@ fetch(dataURL)
         let reservationDay = document.createElement('p');
         let walkInDay = document.createElement('p');
 
-        h2.textContent = `${rentaltype.name}`
-        capacity.textContent = `${rentaltype.capacity}`
-        .textContent = `${rentaltype.reservationHDay}`
-        .textContent = `${rentaltype.walkInHDay}`
-        .textContent = `${rentaltype.reservationDay}`
-        .textContent = `${rentaltype.walkInDay}`
+        h2.textContent = `${rentalstype.name}`
+        capacity.textContent = `${rentalstype.capacity}`
+        .textContent = `${rentalstype.reservationHDay}`
+        .textContent = `${rentalstype.walkInHDay}`
+        .textContent = `${rentalstype.reservationDay}`
+        .textContent = `${rentalstype.walkInDay}`
 
     
         
