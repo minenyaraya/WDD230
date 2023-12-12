@@ -1,5 +1,5 @@
 
-const dataURL = 'https://minenyaraya.github.io/wdd230/scoots/data.json';
+const dataURL = 'https://minenyaraya.github.io/wdd230/scoots/data/data.json';
 const listDiv = document.querySelector('.list-view');
 const cardDiv = document.querySelector('.grid-view');
 
@@ -10,12 +10,12 @@ fetch(dataURL)
     .then((jsonObject) => {
         console.table(jsonObject);
 
-        const businesses = jsonObject['rentalstype'];
+        const rentalstype = jsonObject['rentalstype'];
         rentalstype.forEach(displayRentalstypeInGrid);
         rentalstype.forEach(displayRentalstypeInList);
     });
 
-    function displayBusinessesInGrid(rentalstype) {
+    function displayRentalstypeInGrid(rentalstype) {
 
         let media_card = document.createElement('section');
         let h2 = document.createElement('h2');
@@ -37,8 +37,8 @@ fetch(dataURL)
     
         
       
-        image.setAttribute("src", business.images);
-        image.setAttribute("alt", `Image of ${business.name}`);
+        image.setAttribute("src", rentalstype.images);
+        image.setAttribute("alt", `Image of ${rentalstype.name}`);
         image.setAttribute("loading", "lazy");
         image.setAttribute("width","200");
         image.setAttribute("height","140");
@@ -54,7 +54,7 @@ fetch(dataURL)
         cardDiv.appendChild(media_card);
     }
 
-    function displayBusinessesInList(business) {
+    function displayRentalstypeInList(rentalstype) {
 
         let media_card = document.createElement('section');
         let h2 = document.createElement('h2');
