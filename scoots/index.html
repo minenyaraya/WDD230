@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Scoots Rentals - Cozumel - Mineny Araya WDD 230</title>
+        <meta property="og:title" content="Scoots Rental - Cozumel - Mineny Araya WDD 230">
+        <meta name="author" content="Mineny Araya WDD 230">
+        <meta name="description" content="Scoots is a rental company for scooters, jeeps and side-by-side ATVs.
+        Serves locals, walk-in tourists.
+        Scoots has two locations; one near the Playa del Carmen-Cozumel ferry dock in Downtown Cozumel and the other near the Puerto Maya Terminal.">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="">
+        <meta property="og:url" content="https://minenyaraya.github.io/wdd230/scoots/index.html">
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <link rel="stylesheet" href="styles/base.css">
+        <link rel="stylesheet" href="styles/medium.css">
+        <link rel="stylesheet" href="styles/large.css">
+        <link rel="icon" href="images/scootico.ico">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Katibeh&family=Open+Sans:ital,wght@0,300;0,400;1,300&family=Roboto:wght@100;300&display=swap">
+    </head>  
+    <body>
+    
+ 
+        <header>
+          
+          <div id="top-page-banner">
+            <div class="banner-content">
+            
+                🌦️  Sometime we have rain, please check the weather 😎
+                <button class="bannerBtn" type="button">&times;</button>
+                <table>
+                  <tr>
+                    <td>High Temp:<span id="high"></span>&#176;</td>                    
+                    <td>Low Temp:<span id="low"></span>&#176;</td>
+                  </tr>
+                </table>
+            </div>
+            
+           </div>
+              
+            <h1>Scooters</h1>
+            <h3>Scoots is a rental company for scooters, jeeps and side-by-side ATVs.
+              Serves locals, walk-in tourists.
+              Scoots has two locations; one near the Playa del Carmen-Cozumel ferry dock in Downtown Cozumel and the other near the Puerto Maya Terminal.</h3>
+            
+            <nav>
+                <ul class="navigation">
+                    <li><a onclick="menutoggle()">&#9776; Menu</a></li>
+                    <li><a class="active" href="index.html">Home</a></li>
+                    <li><a href="/wdd230/rentals.html">Rentals</a></li>
+                    <li><a href="/wdd230//reservations.html">Reservations</a></li> 
+                    <li><a href="/wdd230/contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+    
+        <main>
+          <section class="hero">
+            <button onclick="window.location.href='https://minenyaraya.github.io/wdd230/scoots/rental.html';">Click - Reservations</button>
+              <p>.</p>
+              <picture class="scooters">
+                <img src="images/perfecta.webp" alt="scooter">
+              </picture>
+      
+              
+            
+            <h2>We have the Best Rental</h2>
+          </section>
+            <section>
+                <table class="type">
+                    <caption><h2>Rental Types</h2></caption>
+                    <tbody>
+                      <tr class="type">
+                        <th></th><th></th><td>🏆With Reservation:</td><td>🏆</td><td>🏃🏻Walking-in:</td><td>🏃🏻‍♂️</td>
+                      </tr>
+                      <tr class="type">
+                        <td>Type</td><td>Capacity</td><td>Half Day (3H)</td><td>Full Day</td><td>Half Day(3H)</td><td>Full Day</td>
+                      </tr>
+                        <tr class="type">
+                           <td>Honda Metro Scooter</td><td>1</td><td>$20</td><td>$30</td><td>$25</td><td>$35</td>
+                        </tr>
+          
+                        <tr>
+                            <td>Honda Dio Scooter</td><td>2</td><td>$30</td><td>$40</td><td>$35</td><td>$45</td>
+                        </tr>
+                        <tr>
+                            <td>Honda PCX150 Scooter</td><td>2</td><td>$40</td><td>$50</td><td>$45</td><td>$55</td>
+                        </tr>
+                    
+                        <tr>
+                            <td>Honda Pioneer ATV</td><td>4</td><td>$50</td><td>$70</td><td>$60</td><td>$80</td>
+                        </tr>
+                        
+                        <tr>
+                            <td> Jeep Wrangler 4-D with a/c</td><td>5</td><td>$70</td><td>$100</td><td>$85</td><td>$125</td>
+                        </tr>
+                        <tr>
+                            <td>Jeep Wrangler 2-D </td><td>4</td><td>$60</td><td>$85</td><td>$70</td><td>$90</td>
+                        </tr> 
+                    </tbody>      
+                </table>
+    
+                <div class="summary">
+                    <h2>Weather</h2>
+                    <table class="data">                  
+                      <tbody>
+                        <tr><td>Currently: <span id="current"></span></td></tr>
+                        <tr><td>Current Temp: <span id="temp"></span>&#176;</td></tr>
+                        <tr><td>Humidity: <span id="humid"></span>&#37;</td></tr>                                        
+                      </tbody>
+                    </table>
+                  </div>
+    
+                <div class="forecast">
+                    <h2>3-Day Forecast</h2>
+                    <table>
+                      <tr>
+                        <th><span id="days1"></span></th>
+                        <th><span id="days2"></span></th>
+                        <th><span id="days3"></span></th>
+                      </tr>
+                      <tr>
+                        <td><img src="#" alt="" id="image1"><span id="temp1"></span>&deg; F</td>
+                        <td><img src="#" alt="" id="image2"><span id="temp2"></span>&deg; F</td>
+                        <td><img src="#" alt="" id="image3"><span id="temp3"></span>&deg; F</td>
+                      </tr>
+                    </table>
+                  </div>            
+            </section>     
+        </main>   
+        <footer>
+        
+            <div>
+                <p class="copyright">&copy;<span class="year"></span></p> 
+              <p>Scooters Rental Cozumel </p>
+              <p class="highlight" id="lastModified">Last Modified</p>
+            </div>
+            <div class="social">
+              <div class="social-1">
+              <a target="_blank" href="https://facebook.com">
+                <img src="images/faceboock.webp" alt="Facebook"></a>
+              </div>
+              <div class="social-2">
+              <a target="_blank" href="https://www.linkedin.com/">
+                <img src="images/linkedin.webp" alt="linkedin"></a>
+              </div>
+            </div>  
+          </footer>
+      
+          <script src="script/getdates.js"></script>
+          <script src="script/weather.js"></script>
+          <script src="script/menu.js"></script>
+          <script src="script/anuncio.js"></script>
+          <script src="script/darkmode.js"></script>
+      
+  </body>
+</html>

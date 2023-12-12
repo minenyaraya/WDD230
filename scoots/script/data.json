@@ -1,0 +1,67 @@
+{
+  "rentalstype":[
+    
+    {
+      "title": "Honda Metro Scooter",
+      "capacity": "1",
+      "reservation-half-day": "20",
+      "walk-in-half-day":"25",
+      "reservation-day": "30",
+      "walk-in-day": "35",
+      "images": "images/hondametropolitan.webp"
+       
+     },
+     {
+      "title": "Honda Dio Scooter",
+      "capacity": "2",
+      "reservation-half-day": "30",
+      "walk-in-half-day":"35",
+      "reservation-day": "40",
+      "walk-in-day": "45",
+      "images": "images/hondadio2024.webp"
+       
+     },
+     {
+      "title": "Honda PCX150 Scooter",
+      "capacity": "2",
+      "reservation-half-day": "40",
+      "walk-in-half-day":"45",
+      "reservation-day": "50",
+      "walk-in-day": "55",
+      "images": "images/hondapcx2024.webp"
+       
+     },
+     {
+      "title": "Honda Pioneer ATV",
+      "capacity": "4",
+      "reservation-half-day": "50",
+      "walk-in-half-day":"60",
+      "reservation-day": "70",
+      "walk-in-day": "80",
+      "images": "images/hondapioneer10004person.webp"
+       
+     },
+     {
+      "title": "Jeep Wrangler - 4 door with a/c",
+      "capacity": "5",
+      "reservation-half-day": "70",
+      "walk-in-half-day":"85",
+      "reservation-day": "100",
+      "walk-in-day": "125",
+      "images": "images/jeepwrangler5person.wbp"
+       
+     },
+     {
+      "title": "Jeep Wrangler - 2 door",
+      "capacity": "4",
+      "reservation-half-day": "60",
+      "walk-in-half-day":"70",
+      "reservation-day": "85",
+      "walk-in-day": "90",
+      "images": "jeepamarillo2024.webp"
+       
+
+      }
+   ]
+}
+      

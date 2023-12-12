@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Scoots Rentals - Cozumel - Mineny Araya WDD 230</title>
+        <meta property="og:title" content="Scoots Rental - Cozumel - Mineny Araya WDD 230">
+        <meta name="author" content="Mineny Araya WDD 230">
+        <meta name="description" content="Scoots is a rental company for scooters, jeeps and side-by-side ATVs.
+        Serves locals, walk-in tourists.
+        Scoots has two locations; one near the Playa del Carmen-Cozumel ferry dock in Downtown Cozumel and the other near the Puerto Maya Terminal.">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="">
+        <meta property="og:url" content="https://minenyaraya.github.io/wdd230/scoots/index.html">
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <link rel="stylesheet" href="styles/base.css">
+        <link rel="stylesheet" href="styles/medium.css">
+        <link rel="stylesheet" href="styles/large.css">
+        <link rel="icon" href="images/scootico.ico">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Katibeh&family=Open+Sans:ital,wght@0,300;0,400;1,300&family=Roboto:wght@100;300&display=swap">
+    </head>  
+    <body>
+        <header>
+            <div id="top-page-banner">
+                <div class="banner-content">
+                
+                    🌦️  Sometime we have rain, please check the weather 😎
+                    <button class="bannerBtn" type="button">&times;</button>
+                    <table>
+                      <tr>
+                        <td>High Temp:<span id="high"></span>&#176;</td>                    
+                        <td>Low Temp:<span id="low"></span>&#176;</td>
+                      </tr>
+                    </table>
+                </div>
+                
+               </div>
+            
+            <h1>Scooters</h1>
+            <h3>Scoots is a rental company for scooters, jeeps and side-by-side ATVs.
+              Serves locals, walk-in tourists.
+              Scoots has two locations; one near the Playa del Carmen-Cozumel ferry dock in Downtown Cozumel and the other near the Puerto Maya Terminal.</h3>
+            
+            <nav>
+                <ul class="navigation">
+                    <li><a onclick="menutoggle()">&#9776; Menu</a></li>
+                    <li><a class="active" href="index.html">Home</a></li>
+                    <li><a href="/wdd230/rentals.html">Rentals</a></li>
+                    <li><a href="/wdd230//reservations.html">Reservations</a></li> 
+                    <li><a href="/wdd230/contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <main>
+            <section>
+    
+                <div id="form">
+                    <form method="get" action="enjoy.html">
+            
+                        <h3>Please fill out the form below</h3>
+                    
+                        <label for="name">Name: *<br>
+                        <input type="text" id="name" name="name" required="required" minlength="5" pattern="[A-Za-z]{-5}"></label><br>
+            
+                        <label for="email">Email:<br>
+                        <input type="email" id="email" name="email" placeholder="name@mail.com"></label><br>
+            
+                        <label for="number">Phone Number: *<br>
+                        <input type="tel" id="number" name="number" required="required"></label><br>
+                    
+                        <label for="day">Start Date:<br>
+                        <input type="date" id="day" name="day"></label><br> 
+    
+                        <label for="day2">End Date:<br>
+                        <input type="date" id="day2" name="day2"></label><br> 
+            
+                        <label for="type">Vehicle:<br>
+                        <input list="types" id="type" name="type"> 
+                        <datalist id="types">
+                            <option value="Honda Metro">
+                            <option value="Honda Dio">
+                            <option value="Honda PCX150">
+                            <option value="Honda Pioneer ATV">
+                            <option value="4-Door Wrangler">
+                            <option value="2-Door Wrangler">
+                        </datalist></label><br>   
+            
+                        <label for="home">Drive License - State or Country<br>
+                        <input type="text" id="home" name="home" required="required"></label><br>
+                    
+                        <p>Comments</p>
+                    
+                        <label for="userinput"><br>
+                        <textarea id="userinput" name="userinput" rows="5" cols="30">
+                        </textarea></label><br>
+            
+                       <input type="submit" value="Submit">
+                    
+                    </form> 
+                </div>
+                 
+              
+            </section>
+                 <h2>Important Information</h2>    
+                <ul class="Information">
+                    
+                    <li> Rental Services and Agreements</li>
+                    <li>A $50 security deposit is required to confirm reservations.</li>
+                    <li>A valid drivers license is required in hand at the time of rental.</li>
+                    <li>No one under the age of 12 years of age are allowed to ride on the scooters.</li>
+                    <li>Fuel charge is not included.</li>
+                    <li>Unlimited mileage.</li>
+                    <li>Liability insurance is included.</li>
+                    <li>Damage insurance is available for purchase.</li>
+                    <li>Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals.</li>
+                    <li>Payment via Google Pay, Apple Pay, cash, credit card, debit card, or venmo.</li>
+                    <li>Rentals may be returned to either physical location.</li>
+                </ul>
+          
+             <div class="summary">
+                <h2>Weather</h2>
+                <table class="data">                  
+                  <tbody>
+                    <tr><td>Currently: <span id="current"></span></td></tr>
+                    <tr><td>Current Temp: <span id="temp"></span>&#176;</td></tr>
+                    <tr><td>Humidity: <span id="humid"></span>&#37;</td></tr>                                        
+                  </tbody>
+                </table>
+              </div>    
+        </main>   
+        
+        <footer>
+        
+            <div>
+                <p class="copyright">&copy;<span class="year"></span></p> 
+              <p>Scooters Rental Cozumel</p>
+              <p class="highlight" id="lastModified">Last Modified</p>
+            </div>
+            <div class="social">
+              <div class="social-1">
+              <a target="_blank" href="https://facebook.com">
+                <img src="images/faceboock.webp" alt="Facebook"></a>
+              </div>
+              <div class="social-2">
+              <a target="_blank" href="https://www.linkedin.com/">
+                <img src="images/linkedin.webp" alt="linkedin"></a>
+              </div>
+            </div>  
+          </footer>
+      
+          <script src="script/getdates.js"></script>
+          <script src="script/weather.js"></script>
+          <script src="script/menu.js"></script>
+          <script src="script/anuncio.js"></script>
+          <script src="script/darkmode.js"></script>
+      
+  </body>
+</html>

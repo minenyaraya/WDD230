@@ -1,0 +1,44 @@
+@media only screen and (min-width: 600px){
+    header, footer {
+        margin: 0 auto;
+    }
+
+    main {
+        margin: 0 auto;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    
+ 
+    .navigation  li:first-child{
+        display: none;
+    }
+
+    nav ul li {
+        margin: 0 auto;
+    }
+
+    .response, .navigation li {
+        display: flex;
+        text-align: center; 
+    }
+
+    .navigation {
+        display: flex;
+    }
+
+    a:hover{
+        text-decoration: underline;
+    }       
+
+    nav li a {
+        color:black;
+        font-weight: bold;
+        padding: 10px;
+    }
+    
+body{
+    width: 100%;
+}
+}
