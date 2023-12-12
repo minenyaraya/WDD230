@@ -29,10 +29,10 @@ fetch(dataURL)
 
         h2.textContent = `${rentalstype.name}`
         capacity.textContent = `${rentalstype.capacity}`
-        .textContent = `${rentalstype.reservationHDay}`
-        .textContent = `${rentalstype.walkInHDay}`
-        .textContent = `${rentalstype.reservationDay}`
-        .textContent = `${rentalstype.walkInDay}`
+        reservationHDay.textContent = `${rentalstype.reservationHDay}`
+        walkInHDay.textContent = `${rentalstype.walkInHDay}`
+        reservationDay.textContent = `${rentalstype.reservationDay}`
+        walkInDay.textContent = `${rentalstype.walkInDay}`
 
     
         
