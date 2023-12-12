@@ -1,5 +1,5 @@
 
-const dataURL = 'https://minenyaraya.github.io/wdd230/scoots/data/membe.json';
+const dataURL = 'https://minenyaraya.github.io/wdd230/scoots/data.json';
 const listDiv = document.querySelector('.list-view');
 const cardDiv = document.querySelector('.grid-view');
 
@@ -10,27 +10,33 @@ fetch(dataURL)
     .then((jsonObject) => {
         console.table(jsonObject);
 
-        const businesses = jsonObject['businesses'];
-        businesses.forEach(displayBusinessesInGrid);
-        businesses.forEach(displayBusinessesInList);
+        const businesses = jsonObject['rentaltype'];
+        rentaltype.forEach(displayRentalstypeInGrid);
+        rentaltype.forEach(displayRentalstypeInList);
     });
 
-    function displayBusinessesInGrid(business) {
+    function displayBusinessesInGrid(rentaltype) {
 
         let media_card = document.createElement('section');
         let h2 = document.createElement('h2');
         let image = document.createElement('img');
         let hr = document.createElement('hr');
-        let phone = document.createElement('p');
-        let address = document.createElement('p');
-        let website = document.createElement('a');
+        let capacity = document.createElement('p');
+        let reservationHDay= document.createElement('p');
+        let walkInHDay= document.createElement('p');
+        let reservationDay = document.createElement('p');
+        let walkInDay = document.createElement('p');
 
-        h2.textContent = `${business.name}`
-        phone.textContent = `${business.phone}`
-        address.textContent = `${business.address}`
-        website.textContent = `${business.website}`
+        h2.textContent = `${rentaltype.name}`
+        capacity.textContent = `${rentaltype.capacity}`
+        .textContent = `${rentaltype.reservationHDay}`
+        .textContent = `${rentaltype.walkInHDay}`
+        .textContent = `${rentaltype.reservationDay}`
+        .textContent = `${rentaltype.walkInDay}`
+
+    
         
-        website.setAttribute("href", business.website);
+      
         image.setAttribute("src", business.images);
         image.setAttribute("alt", `Image of ${business.name}`);
         image.setAttribute("loading", "lazy");
@@ -40,9 +46,10 @@ fetch(dataURL)
         media_card.appendChild(h2);
         media_card.appendChild(image);
         media_card.appendChild(hr);
-        media_card.appendChild(phone);
-        media_card.appendChild(address);
-        media_card.appendChild(website);
+        media_card.appendChild(p);
+        media_card.appendChild(p);
+        media_card.appendChild(p);
+        media_card.appendChild(p);
             
         cardDiv.appendChild(media_card);
     }
@@ -51,20 +58,26 @@ fetch(dataURL)
 
         let media_card = document.createElement('section');
         let h2 = document.createElement('h2');
-        let phone = document.createElement('p');
-        let address = document.createElement('p');
-        let website = document.createElement('p');
+        let capacity = document.createElement('p');
+        let reservationHDay = document.createElement('p');
+        let walkInHDay = document.createElement('p');
+        let reservationDay = document.createElement('p');
+        let walkInDay = document.createElement('p');
 
-        h2.textContent = business.name
-        phone.textContent = business.phone
-        address.textContent = business.address
-        website.textContent = business.website
+        h2.textContent = rentaltype.name
+        capacity.textContent = rentaltype.phone
+        reservationHDay.textContent = rentaltype.address
+        walkInHDay.textContent = rentaltype.website
+        reservationDay.textContent = rentaltype.address
+        walkInDay.textContent = rentaltype.website
         
        
         media_card.appendChild(h2);
-        media_card.appendChild(phone);
-        media_card.appendChild(address);
-        media_card.appendChild(website);
+        media_card.appendChild(capacity);
+        media_card.appendChild(reservationHDay);
+        media_card.appendChild(walkInHDay);
+        media_card.appendChild(reservationDay);
+        media_card.appendChild(walkInDay);
             
         listDiv.appendChild(media_card);
     }
