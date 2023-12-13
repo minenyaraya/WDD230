@@ -2,62 +2,62 @@
   "rentals":[
     {
       "title": "Honda Metro Scooter",
-      "capacity": "1",
-      "reservationHDay": "20",
-      "walKinHDay":"25",
-      "reservationDay": "30",
-      "walkInDay": "35",
-      "image": "images/hondametropolitan.webp"
+      "capacity": "1 person",
+      "reservationHDay": "$20",
+      "walKinHDay":"$25",
+      "reservationDay": "$30",
+      "walkInDay": "$35",
+      "image": "image/hondametropolitan.webp"
        
      },
      {
       "title": "Honda Dio Scooter",
-      "capacity": "2",
-      "reservationHDay": "30",
-      "walkInHDay":"35",
-      "reservationDay": "40",
-      "walkInDay": "45",
-      "image": "images/hondadio2024.webp"
+      "capacity": "2 person",
+      "reservationHDay": "$30",
+      "walkInHDay":"$35",
+      "reservationDay": "$40",
+      "walkInDay": "$45",
+      "image": "image/hondadio2024.webp"
        
      },
      {
       "title": "Honda PCX150 Scooter",
-      "capacity": "2",
-      "reservationHDay": "40",
-      "walkInHDay":"45",
-      "reservationDay": "50",
-      "walkInDay": "55",
-      "image": "images/hondapcx2024.webp"
+      "capacity": "2 person",
+      "reservationHDay": "$40",
+      "walkInHDay":"$45",
+      "reservationDay": "$50",
+      "walkInDay": "$55",
+      "image": "image/hondapcx2024.webp"
        
      },
      {
       "title": "Honda Pioneer ATV",
-      "capacity": "4",
-      "reservationHDay": "50",
-      "walkInHDay":"60",
-      "reservationDay":"70",
-      "walkInDay": "80",
-      "image": "images/honda4person.webp"
+      "capacity": "4 person",
+      "reservationHDay": "$50",
+      "walkInHDay":"$60",
+      "reservationDay":"$70",
+      "walkInDay": "$80",
+      "image": "image/honda4person.webp"
        
      },
      {
       "title": "Jeep Wrangler - 4 door with a/c",
-      "capacity": "5",
-      "reservationHDay": "70",
-      "walKinHDay":"85",
-      "reservationDay": "100",
-      "walkInDay": "125",
-      "image": "images/jeep5person.wbp"
+      "capacity": "5 person",
+      "reservationHDay": "$70",
+      "walKinHDay":"$85",
+      "reservationDay": "$100",
+      "walkInDay": "$125",
+      "image": "image/jeep5person.wbp"
        
      },
      {
       "title": "Jeep Wrangler - 2 door",
-      "capacity": "4",
-      "reservationHDay": "60",
-      "walKinHDay":"70",
-      "reservationDay": "85",
-      "walkInDay": "90",
-      "image": "jeep2024.webp"
+      "capacity": "4 person",
+      "reservationHDay": "$60",
+      "walKinHDay":"$70",
+      "reservationDay": "$85",
+      "walkInDay": "$90",
+      "image": "image/jeep2024.webp"
        
 
       }

@@ -16,22 +16,28 @@ fetch(dataURL)
 
     function displayRentalsInGrid(rental) {
 
-        let media_card = document.createElement('section');
+        let media_card = document.createElement('div');
         let h2 = document.createElement('h2');
         let image = document.createElement('img');
         let hr = document.createElement('hr');
-        let phone = document.createElement('p');
-        let address = document.createElement('p');
-        let website = document.createElement('a');
+        let capacity = document.createElement('p');
+        let reservationHDay = document.createElement('p');
+        let walkInHDay = document.createElement('p');
+        let walkInDay = document.createElement('p');
+        let reservationDay = document.createElement('p');
 
-        h2.textContent = `${rental.name}`
-        phone.textContent = `${rental.phone}`
-        address.textContent = `${rental.address}`
-        website.textContent = `${rental.website}`
         
-        website.setAttribute("href", rental.website);
-        image.setAttribute("src", rental.images);
-        image.setAttribute("alt", `Image of ${rental.name}`);
+
+        h2.textContent = `${rental.title}`
+        capacity.textContent = `${rental.capacity}`
+        reservationHDay.textContent = `${rental.reservationHDay}`
+        walkInHDay.textContent = `${rental.walkInHDay}`
+        reservationDay.textContent = `${rental.reservationDay}`
+        walkInDay.textContent = `${rental.walkInDay}`
+        
+        
+        image.setAttribute("src", rental.image);
+        image.setAttribute("alt", `Image of ${rental.title}`);
         image.setAttribute("loading", "lazy");
         image.setAttribute("width","200");
         image.setAttribute("height","140");
@@ -39,9 +45,11 @@ fetch(dataURL)
         media_card.appendChild(h2);
         media_card.appendChild(image);
         media_card.appendChild(hr);
-        media_card.appendChild(phone);
-        media_card.appendChild(address);
-        media_card.appendChild(website);
+        media_card.appendChild(capacity);
+        media_card.appendChild(reservationHDay);
+        media_card.appendChild(walkInHDay);
+        media_card.appendChild(reservationDay);
+        media_card.appendChild(walkInDay);
             
         cardDiv.appendChild(media_card);
     }
@@ -50,20 +58,26 @@ fetch(dataURL)
 
         let media_card = document.createElement('section');
         let h2 = document.createElement('h2');
-        let phone = document.createElement('p');
-        let address = document.createElement('p');
-        let website = document.createElement('p');
+        let capacity = document.createElement('p');
+        let reservationHDay = document.createElement('p');
+        let walkInHDay = document.createElement('p');
+        let reservationDay = document.createElement('p');
+        let walkInDay = document.createElement('p');
 
-        h2.textContent = rental.name
-        phone.textContent = rental.phone
-        address.textContent = rental.address
-        website.textContent = rental.website
+        h2.textContent = rental.title
+        capacity.textContent = rental.capacity
+        reservationHDay.textContent = rental.reservationHDay
+        walkInHDay.textContent = rental.walkInHDay
+        reservationDay.textContent = rental.reservationDay
+        walkInDay.textContent = rental.walkInDay
         
        
         media_card.appendChild(h2);
-        media_card.appendChild(phone);
-        media_card.appendChild(address);
-        media_card.appendChild(website);
+        media_card.appendChild(capacity);
+        media_card.appendChild(reservationHDay);
+        media_card.appendChild(walkInHDay);
+        media_card.appendChild(reservationDay);
+        media_card.appendChild(walkInDay);
             
         listDiv.appendChild(media_card);
     }
