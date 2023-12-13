@@ -23,8 +23,8 @@ fetch(dataURL)
         let capacity = document.createElement('p');
         let reservationHDay = document.createElement('p');
         let walkInHDay = document.createElement('p');
-        let walkInDay = document.createElement('p');
         let reservationDay = document.createElement('p');
+        let walkInDay = document.createElement('p');
 
         
 
@@ -56,7 +56,7 @@ fetch(dataURL)
 
     function displayBusinessesInList(rental) {
 
-        let media_card = document.createElement('section');
+        let media_card = document.createElement('div');
         let h2 = document.createElement('h2');
         let capacity = document.createElement('p');
         let reservationHDay = document.createElement('p');

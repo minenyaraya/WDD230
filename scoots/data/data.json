@@ -4,7 +4,7 @@
       "title": "Honda Metro Scooter",
       "capacity": "1 person",
       "reservationHDay": "$20",
-      "walKinHDay":"$25",
+      "walkInHDay": "$25",
       "reservationDay": "$30",
       "walkInDay": "$35",
       "image": "image/hondametropolitan.webp"
@@ -14,7 +14,7 @@
       "title": "Honda Dio Scooter",
       "capacity": "2 person",
       "reservationHDay": "$30",
-      "walkInHDay":"$35",
+      "walkInHDay": "$35",
       "reservationDay": "$40",
       "walkInDay": "$45",
       "image": "image/hondadio2024.webp"
