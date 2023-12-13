@@ -3,60 +3,60 @@
     {
       "title": "Honda Metro Scooter",
       "capacity": "1 person",
-      "reservationHDay": "$20",
-      "walkInHDay": "$25",
-      "reservationDay": "$30",
-      "walkInDay": "$35",
+      "reservationHDay": "Half Day w/reservation $20",
+      "walkInHDay": "Half day walk-in $25",
+      "reservationDay": "Day w/reservation $30",
+      "walkInDay": "Day Walk-in $35",
       "image": "image/hondametropolitan.webp"
        
      },
      {
       "title": "Honda Dio Scooter",
       "capacity": "2 person",
-      "reservationHDay": "$30",
-      "walkInHDay": "$35",
-      "reservationDay": "$40",
-      "walkInDay": "$45",
+      "reservationHDay": "Half Day w/reservation $30",
+      "walkInHDay": "Half day walk-in $35",
+      "reservationDay": "Day w/reservation $40",
+      "walkInDay": "Day Walk-in $45",
       "image": "image/hondadio2024.webp"
        
      },
      {
       "title": "Honda PCX150 Scooter",
       "capacity": "2 person",
-      "reservationHDay": "$40",
-      "walkInHDay":"$45",
-      "reservationDay": "$50",
-      "walkInDay": "$55",
+      "reservationHDay": "Half Day w/reservation $40",
+      "walkInHDay":"Half day walk-in $45",
+      "reservationDay": "Day w/reservation $50",
+      "walkInDay": "Day Walk-in $55",
       "image": "image/hondapcx2024.webp"
        
      },
      {
       "title": "Honda Pioneer ATV",
       "capacity": "4 person",
-      "reservationHDay": "$50",
-      "walkInHDay":"$60",
-      "reservationDay":"$70",
-      "walkInDay": "$80",
+      "reservationHDay": "Half Day w/reservation $50",
+      "walkInHDay":"Half day walk-in $60",
+      "reservationDay":"Day w/reservation $70",
+      "walkInDay": "Day Walk-in $80",
       "image": "image/honda4person.webp"
        
      },
      {
       "title": "Jeep Wrangler - 4 door with a/c",
       "capacity": "5 person",
-      "reservationHDay": "$70",
-      "walKinHDay":"$85",
-      "reservationDay": "$100",
-      "walkInDay": "$125",
+      "reservationHDay": "Half Day w/reservation $70",
+      "walKinHDay":"Half day walk-in $85",
+      "reservationDay": "Day w/reservation $100",
+      "walkInDay": "Day Walk-in $125",
       "image": "image/jeep5person.webp"
        
      },
      {
       "title": "Jeep Wrangler - 2 door",
       "capacity": "4 person",
-      "reservationHDay": "$60",
-      "walKinHDay":"$70",
-      "reservationDay": "$85",
-      "walkInDay": "$90",
+      "reservationHDay": "Half Day w/reservation $60",
+      "walKinHDay":"Half day walk-in $70",
+      "reservationDay": "Day w/reservation $85",
+      "walkInDay": "Day Walk-in $90",
       "image": "image/jeep2024.webp"
        
 
