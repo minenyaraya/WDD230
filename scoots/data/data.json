@@ -44,7 +44,7 @@
       "title": "Jeep Wrangler - 4 door with a/c",
       "capacity": "5 person",
       "reservationHDay": "Half Day w/reservation $70",
-      "walKinHDay":"Half day walk-in $85",
+      "walKinHDay": "Half day walk-in $85",
       "reservationDay": "Day w/reservation $100",
       "walkInDay": "Day Walk-in $125",
       "image": "image/jeep5person.webp"
@@ -54,7 +54,7 @@
       "title": "Jeep Wrangler - 2 door",
       "capacity": "4 person",
       "reservationHDay": "Half Day w/reservation $60",
-      "walKinHDay":"Half day walk-in $70",
+      "walKinHDay": "Half day walk-in $70",
       "reservationDay": "Day w/reservation $85",
       "walkInDay": "Day Walk-in $90",
       "image": "image/jeep2024.webp"
