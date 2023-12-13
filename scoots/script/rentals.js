@@ -1,4 +1,3 @@
-
 const dataURL = 'https://minenyaraya.github.io/wdd230/scoots/data/data.json';
 const listDiv = document.querySelector('.list-view');
 const cardDiv = document.querySelector('.grid-view');
@@ -21,22 +20,16 @@ fetch(dataURL)
         let h2 = document.createElement('h2');
         let image = document.createElement('img');
         let hr = document.createElement('hr');
-        let capacity = document.createElement('p');
-        let reservationHDay= document.createElement('p');
-        let walkInHDay= document.createElement('p');
-        let reservationDay = document.createElement('p');
-        let walkInDay = document.createElement('p');
+        let phone = document.createElement('p');
+        let address = document.createElement('p');
+        let website = document.createElement('a');
 
         h2.textContent = `${rental.name}`
-        capacity.textContent = `${rental.capacity}`
-        reservationHDay.textContent = `${rental.reservationHDay}`
-        walkInHDay.textContent = `${rental.walkInHDay}`
-        reservationDay.textContent = `${rental.reservationDay}`
-        walkInDay.textContent = `${rental.walkInDay}`
-
-    
+        phone.textContent = `${rental.phone}`
+        address.textContent = `${rental.address}`
+        website.textContent = `${rental.website}`
         
-      
+        website.setAttribute("href", rental.website);
         image.setAttribute("src", rental.images);
         image.setAttribute("alt", `Image of ${rental.name}`);
         image.setAttribute("loading", "lazy");
@@ -46,38 +39,31 @@ fetch(dataURL)
         media_card.appendChild(h2);
         media_card.appendChild(image);
         media_card.appendChild(hr);
-        media_card.appendChild(p);
-        media_card.appendChild(p);
-        media_card.appendChild(p);
-        media_card.appendChild(p);
+        media_card.appendChild(phone);
+        media_card.appendChild(address);
+        media_card.appendChild(website);
             
         cardDiv.appendChild(media_card);
     }
 
-    function displayRentalsInList(rental) {
+    function displayBusinessesInList(rental) {
 
         let media_card = document.createElement('section');
         let h2 = document.createElement('h2');
-        let capacity = document.createElement('p');
-        let reservationHDay = document.createElement('p');
-        let walkInHDay = document.createElement('p');
-        let reservationDay = document.createElement('p');
-        let walkInDay = document.createElement('p');
+        let phone = document.createElement('p');
+        let address = document.createElement('p');
+        let website = document.createElement('p');
 
         h2.textContent = rental.name
-        capacity.textContent = rental.phone
-        reservationHDay.textContent = rental.address
-        walkInHDay.textContent = rental.website
-        reservationDay.textContent = rental.address
-        walkInDay.textContent = rental.website
+        phone.textContent = rental.phone
+        address.textContent = rental.address
+        website.textContent = rental.website
         
        
         media_card.appendChild(h2);
-        media_card.appendChild(capacity);
-        media_card.appendChild(reservationHDay);
-        media_card.appendChild(walkInHDay);
-        media_card.appendChild(reservationDay);
-        media_card.appendChild(walkInDay);
+        media_card.appendChild(phone);
+        media_card.appendChild(address);
+        media_card.appendChild(website);
             
         listDiv.appendChild(media_card);
     }
