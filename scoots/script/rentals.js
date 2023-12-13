@@ -16,7 +16,7 @@ fetch(dataURL)
 
     function displayRentalsInGrid(rental) {
 
-        let media_card = document.createElement('div');
+        let card = document.createElement('div');
         let h2 = document.createElement('h2');
         let image = document.createElement('img');
         let hr = document.createElement('hr');
@@ -42,21 +42,21 @@ fetch(dataURL)
         image.setAttribute("width","200");
         image.setAttribute("height","140");
        
-        media_card.appendChild(h2);
-        media_card.appendChild(image);
-        media_card.appendChild(hr);
-        media_card.appendChild(capacity);
-        media_card.appendChild(reservationHDay);
-        media_card.appendChild(walkInHDay);
-        media_card.appendChild(reservationDay);
-        media_card.appendChild(walkInDay);
+        card.appendChild(h2);
+        card.appendChild(image);
+        card.appendChild(hr);
+        card.appendChild(capacity);
+        card.appendChild(reservationHDay);
+        card.appendChild(walkInHDay);
+        card.appendChild(reservationDay);
+        card.appendChild(walkInDay);
             
-        cardDiv.appendChild(media_card);
+        cardDiv.appendChild(card);
     }
 
     function displayBusinessesInList(rental) {
 
-        let media_card = document.createElement('div');
+        let card = document.createElement('div');
         let h2 = document.createElement('h2');
         let capacity = document.createElement('p');
         let reservationHDay = document.createElement('p');
@@ -72,12 +72,12 @@ fetch(dataURL)
         walkInDay.textContent = rental.walkInDay
         
        
-        media_card.appendChild(h2);
-        media_card.appendChild(capacity);
-        media_card.appendChild(reservationHDay);
-        media_card.appendChild(walkInHDay);
-        media_card.appendChild(reservationDay);
-        media_card.appendChild(walkInDay);
+        card.appendChild(h2);
+        card.appendChild(capacity);
+        card.appendChild(reservationHDay);
+        card.appendChild(walkInHDay);
+        card.appendChild(reservationDay);
+        card.appendChild(walkInDay);
             
         listDiv.appendChild(media_card);
     }
