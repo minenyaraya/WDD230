@@ -10,12 +10,12 @@ fetch(dataURL)
     .then((jsonObject) => {
         console.table(jsonObject);
 
-        const rentalstype = jsonObject['rentalstype'];
-        rentalstype.forEach(displayRentalstypeInGrid);
-        rentalstype.forEach(displayRentalstypeInList);
+        const rentals = jsonObject['rentals'];
+        rentals.forEach(displayRentalsInGrid);
+        rentals.forEach(displayRentalsInList);
     });
 
-    function displayRentalstypeInGrid(rentalstype) {
+    function displayRentalsInGrid(rental) {
 
         let media_card = document.createElement('section');
         let h2 = document.createElement('h2');
@@ -27,18 +27,18 @@ fetch(dataURL)
         let reservationDay = document.createElement('p');
         let walkInDay = document.createElement('p');
 
-        h2.textContent = `${rentalstype.name}`
-        capacity.textContent = `${rentalstype.capacity}`
-        reservationHDay.textContent = `${rentalstype.reservationHDay}`
-        walkInHDay.textContent = `${rentalstype.walkInHDay}`
-        reservationDay.textContent = `${rentalstype.reservationDay}`
-        walkInDay.textContent = `${rentalstype.walkInDay}`
+        h2.textContent = `${rental.name}`
+        capacity.textContent = `${rental.capacity}`
+        reservationHDay.textContent = `${rental.reservationHDay}`
+        walkInHDay.textContent = `${rental.walkInHDay}`
+        reservationDay.textContent = `${rental.reservationDay}`
+        walkInDay.textContent = `${rental.walkInDay}`
 
     
         
       
-        image.setAttribute("src", rentalstype.images);
-        image.setAttribute("alt", `Image of ${rentalstype.name}`);
+        image.setAttribute("src", rental.images);
+        image.setAttribute("alt", `Image of ${rental.name}`);
         image.setAttribute("loading", "lazy");
         image.setAttribute("width","200");
         image.setAttribute("height","140");
@@ -54,7 +54,7 @@ fetch(dataURL)
         cardDiv.appendChild(media_card);
     }
 
-    function displayRentalstypeInList(rentalstype) {
+    function displayRentalsInList(rental) {
 
         let media_card = document.createElement('section');
         let h2 = document.createElement('h2');
@@ -64,12 +64,12 @@ fetch(dataURL)
         let reservationDay = document.createElement('p');
         let walkInDay = document.createElement('p');
 
-        h2.textContent = rentaltype.name
-        capacity.textContent = rentaltype.phone
-        reservationHDay.textContent = rentaltype.address
-        walkInHDay.textContent = rentaltype.website
-        reservationDay.textContent = rentaltype.address
-        walkInDay.textContent = rentaltype.website
+        h2.textContent = rental.name
+        capacity.textContent = rental.phone
+        reservationHDay.textContent = rental.address
+        walkInHDay.textContent = rental.website
+        reservationDay.textContent = rental.address
+        walkInDay.textContent = rental.website
         
        
         media_card.appendChild(h2);

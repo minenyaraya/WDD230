@@ -1,6 +1,5 @@
 {
-  "rentalstype":[
-    
+  "rentals":[
     {
       "title": "Honda Metro Scooter",
       "capacity": "1",
@@ -8,7 +7,7 @@
       "walKinHDay":"25",
       "reservationDay": "30",
       "walkInDay": "35",
-      "images": "images/hondametropolitan.webp"
+      "image": "images/hondametropolitan.webp"
        
      },
      {
@@ -18,7 +17,7 @@
       "walkInHDay":"35",
       "reservationDay": "40",
       "walkInDay": "45",
-      "images": "images/hondadio2024.webp"
+      "image": "images/hondadio2024.webp"
        
      },
      {
@@ -28,7 +27,7 @@
       "walkInHDay":"45",
       "reservationDay": "50",
       "walkInDay": "55",
-      "images": "images/hondapcx2024.webp"
+      "image": "images/hondapcx2024.webp"
        
      },
      {
@@ -38,7 +37,7 @@
       "walkInHDay":"60",
       "reservationDay":"70",
       "walkInDay": "80",
-      "images": "images/hondapioneer10004person.webp"
+      "image": "images/honda4person.webp"
        
      },
      {
@@ -48,7 +47,7 @@
       "walKinHDay":"85",
       "reservationDay": "100",
       "walkInDay": "125",
-      "images": "images/jeepwrangler5person.wbp"
+      "image": "images/jeep5person.wbp"
        
      },
      {
@@ -58,7 +57,7 @@
       "walKinHDay":"70",
       "reservationDay": "85",
       "walkInDay": "90",
-      "images": "jeepamarillo2024.webp"
+      "image": "jeep2024.webp"
        
 
       }
